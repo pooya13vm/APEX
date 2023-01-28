@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  margin: 0 !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top_line {
   display: flex;
-  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.line {
+  height: 5px;
+  flex-grow: 1;
+}
+.header_image {
+  margin: 80px 10.3%;
+  background-image: url("./assets/images/background.png");
+  /* background-position: center;
+  background-size: cover; */
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 825px;
+}
+.header_image h1 {
+  color: #ffffff;
+  font-size: 100px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+.border_color {
+  height: 5px;
+  color: aqua;
+}
+.circles_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 14%;
+  margin-right: 12%;
+  margin-left: 12%;
+}
+
+.circle_item {
+  height: 222px;
+  width: 222px;
+  border-radius: 150px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.circle_item:nth-child(1) {
+  background-color: #3ebfc1d3;
+}
+.circle_item:nth-child(2) {
+  background-color: #fac644e3;
+}
+.circle_item:nth-child(3) {
+  background-color: #db253de3;
+}
+.circle_item p {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 2rem;
+}
+SVG {
+  position: absolute;
+  cursor: pointer;
+}
+.svg-text {
+  font-size: 1px;
+  font-weight: 700;
+}
+.svg-center-text {
+  position: absolute;
+  top: 280px;
+  left: 260px;
+  z-index: 1001;
+}
+.svg-center-text p {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.svg-container {
+  position: relative;
+  /* display: inline-block; */
 }
