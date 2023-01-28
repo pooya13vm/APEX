@@ -1,63 +1,12 @@
-import { useState } from "react";
 import "./App.css";
+import SvgStar from "./components/Svgstar";
+import num1 from "./assets/images/Group 116.png";
+import num2 from "./assets/images/Group 115.png";
+import num3 from "./assets/images/Group 113.png";
+import num4 from "./assets/images/Group 114.png";
+import polygon from "./assets/images/Polygon 1.png";
 
 function App() {
-  const colorsAction = [
-    {
-      first: "#db253e",
-      second: "#376667",
-      third: "#50295f",
-      forth: "#483d4f",
-      text1: "#ffffff",
-      text2: "#747376d7",
-      text3: "#747376d7",
-      text4: "#747376d7",
-    },
-    {
-      first: "#8f1929",
-      second: "#3ebec1",
-      third: "#50295f",
-      forth: "#483d4f",
-      text1: "#747376d7",
-      text2: "#ffffff",
-      text3: "#747376d7",
-      text4: "#747376d7",
-    },
-    {
-      first: "#8f1929",
-      second: "#376667",
-      third: "#7e14a8",
-      forth: "#483d4f",
-      text1: "#747376d7",
-      text2: "#747376d7",
-      text3: "#ffffff",
-      text4: "#747376d7",
-    },
-    {
-      first: "#8f1929",
-      second: "#376667",
-      third: "#50295f",
-      forth: "#a18cad",
-      text1: "#747376d7",
-      text2: "#747376d7",
-      text3: "#747376d7",
-      text4: "#ffffff",
-    },
-  ];
-  const [state, setState] = useState({
-    first: "#db253e",
-    second: "#376667",
-    third: "#50295f",
-    forth: "#483d4f",
-    text1: "#ffffff",
-    text2: "#747376d7",
-    text3: "#747376d7",
-    text4: "#747376d7",
-  });
-  const active = (num) => {
-    console.log(num);
-    setState(colorsAction[num]);
-  };
   return (
     <>
       <div className="header_image">
@@ -80,99 +29,78 @@ function App() {
           </div>
         </div>
       </div>
-
-      <div
-        style={{
-          width: 600,
-          height: 600,
-          margin: "10.3%",
-          position: "relative",
-        }}
-      >
-        <svg
-          height="160"
-          width="160"
-          style={{ zIndex: 100, top: 230, left: 230 }}
+      <div className="center-child">
+        <hr
+          style={{
+            width: 343,
+            height: 15,
+            backgroundColor: "#3ebec1",
+            border: "none",
+          }}
+        />
+      </div>
+      <div className="slogan-text">
+        <p style={{ color: "#3A394B", fontSize: 50, fontWeight: 800 }}>
+          Apex Media has partnered with universities for decades to face the
+          challenge of declining enrollment
+        </p>
+      </div>
+      <a className="center-child">
+        <button
+          style={{
+            width: 255,
+            height: 63,
+            fontSize: "1.3rem",
+            fontWeight: 700,
+            color: "#fac544",
+            backgroundColor: "#3A394B",
+            border: "none",
+          }}
         >
-          <circle cx="80" cy="80" r="80" fill="#fac544" />
-        </svg>
-        <div className="svg-center-text">
-          <p>ENROLLED</p>
-          <p>STUDENTS</p>
+          Learn More
+        </button>
+      </a>
+      <div className="method-section-container">
+        <div className="method-section-left col-6">
+          <img src={num1} />
+          <img src={polygon} className="polygon" />
+          <img src={num2} />
+          <img src={polygon} className="polygon" />
+          <img src={num3} />
+          <img src={polygon} className="polygon" />
+          <img src={num4} />
         </div>
-        <div style={{ position: "relative" }}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="3 2 24 24"
-            onClick={() => active(0)}
-          >
-            <g fill={state.first}>
-              <path d="M 15 14 L 21 8 L 18 2 L 12 2 L 9 8" />
-            </g>
-            <text x="12.5" y="6" fill={state.text1} className="svg-text">
-              SITUATION
-            </text>
-            <text x="12" y="7.5" fill={state.text1} className="svg-text">
-              ASSESSMENT
-            </text>
-          </svg>
-
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 12 12"
-            onClick={() => active(1)}
-            style={{ width: 300, top: 150, left: 300 }}
-          >
-            <g fill={state.second} onClick={() => active(1)}>
-              <path d="M 12 3 L 12 9 L 6 12 L 0 6 L 6 0" />
-            </g>
-            <text x="4.5" y="5" fill={state.text2} className="svg-text">
-              ENROLLMENT
-            </text>
-            <text x="6" y="6.5" fill={state.text2} className="svg-text">
-              FUNNEL
-            </text>
-            <text x="4" y="8" fill={state.text2} className="svg-text">
-              MANAGEMENT
-            </text>
-          </svg>
-
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 12 12"
-            onClick={() => active(2)}
-            style={{ width: 300, top: 300, left: 150 }}
-          >
-            <g fill={state.third}>
-              <path d="M 12 6 L 9 12 L 3 12 L 0 6 L 6 0" />
-            </g>
-            <text x="2.5" y="7.5" fill={state.text3} className="svg-text">
-              COMPETITIVE
-            </text>
-            <text x="3.5" y="9" fill={state.text3} className="svg-text">
-              INSIGHTS
-            </text>
-          </svg>
-
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 12 12"
-            onClick={() => active(3)}
-            style={{ width: 300, position: "absolute", top: 150 }}
-          >
-            <g fill={state.forth}>
-              <path d="M 12 6 L 6 12 L 0 9 L 0 3 L 6 0" />
-            </g>
-
-            <text x="2.5" y="5.5" fill={state.text4} className="svg-text">
-              STUDENT
-            </text>
-            <text x="1" y="7" fill={state.text4} className="svg-text">
-              PERSPECTIVES
-            </text>
-          </svg>
+        <div className="col-6">
+          <div className="method-section-right">
+            <h3>OUR METHOD</h3>
+            <p>
+              Apex Media uses advanced, proprietary methods and technology to
+              identify, locate, and connect with your ideal student segment.{" "}
+            </p>
+            <p>
+              We then utilize an omni-channel approach to actively engage your
+              potential students to turn them into enrollments.
+            </p>
+            <button
+              style={{
+                width: 255,
+                height: 63,
+                fontSize: "1.3rem",
+                fontWeight: 700,
+                color: "rgb(58, 57, 75)",
+                backgroundColor: "rgb(250, 197, 68)",
+                border: "none",
+                textDecoration: "none",
+                marginTop: 20,
+              }}
+            >
+              Learn More
+            </button>
+          </div>
         </div>
       </div>
+
+      <SvgStar />
     </>
   );
 }
