@@ -217,11 +217,13 @@ const SvgStar = () => {
   return (
     <div className="svg-container row">
       <div className="svg-left col-6">
-        <div className="svg-left-title1">
-          <h3>UNIVERSITY VERSION</h3>
-        </div>
-        <div className="svg-left-title2">
-          <h3>STRATEGY</h3>
+        <div onClick={() => setContentItem(5)}>
+          <div className="svg-left-title1">
+            <h3>UNIVERSITY VERSION</h3>
+          </div>
+          <div className="svg-left-title2">
+            <h3>STRATEGY</h3>
+          </div>
         </div>
         <div
           style={{
@@ -305,7 +307,9 @@ const SvgStar = () => {
               <g fill={state.forth}>
                 <path d="M 12 6 L 6 12 L 0 9 L 0 3 L 6 0" />
               </g>
-
+              <text x="1.4" y="5.5" fill={state.text4} className="svg-text">
+                <i class="fa-thin fa-eye"></i>
+              </text>
               <text x="2.5" y="5.5" fill={state.text4} className="svg-text">
                 STUDENT
               </text>
