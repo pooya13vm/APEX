@@ -49,7 +49,7 @@ function App() {
         />
       </div>
       <div className="slogan-text">
-        <p style={{ color: "#3A394B", fontSize: 50, fontWeight: 800 }}>
+        <p>
           Apex Media has partnered with universities for decades to face the
           challenge of declining enrollment
         </p>
@@ -140,7 +140,7 @@ function App() {
         </div>
         <div className="col-3 quot-img">
           <img src={quot2} className="img-fluid" />
-          <img src={play} style={{ marginLeft: 177 }} className="img-fluid" />
+          <img src={play} className="img-fluid" />
         </div>
       </div>
       <div className="logos-container">

@@ -31,7 +31,7 @@ a {
   background-image: url("./assets/images/background.png");
   /* background-position: center; */
   background-size: contain;
-  background-color: #39384a;
+  /* background-color: #39384a; */
   background-repeat: no-repeat;
   text-align: center;
   height: 825px;
@@ -43,6 +43,7 @@ a {
   font-weight: 800;
   margin-top: 20px;
 }
+
 .border_color {
   height: 5px;
   color: aqua;
@@ -64,6 +65,7 @@ a {
   align-items: center;
   justify-content: center;
 }
+
 .circle_item:nth-child(1) {
   background-color: #3ebfc1d3;
 }
@@ -77,6 +79,11 @@ a {
   color: #ffffff;
   font-weight: 600;
   font-size: 2rem;
+}
+.slogan-text p {
+  color: #3a394b;
+  font-size: 50px;
+  font-weight: 800;
 }
 .method-section-container {
   width: 100%;
@@ -220,6 +227,7 @@ SVG {
   font-weight: 800;
   color: #39384a;
 }
+
 .content-detail-container {
   margin-top: 30px;
   margin-left: 5px;
@@ -302,4 +310,64 @@ form {
   text-align: end;
   font-size: 22px;
   font-weight: 600;
+}
+.quot-img img:nth-child(2) {
+  margin-left: 177px;
+}
+
+@media only screen and (max-width: 1730px) {
+  .header_image h1 {
+    font-size: 75px;
+  }
+  .circle_item {
+    height: 210px;
+    width: 210px;
+  }
+  .quot-content h3 {
+    font-size: 40px;
+  }
+  .quot-img img:nth-child(2) {
+    margin-left: 0;
+  }
+  .svg-container {
+    margin: 0 5% 80px 5%;
+  }
+  .header_image {
+    /* margin: 80px 10.3% 0px 10.3%; */
+    background-size: auto;
+  }
+  .circles_container {
+    margin-top: 22%;
+  }
+}
+@media only screen and (max-width: 1330px) {
+  .slogan-text p {
+    font-size: 40px;
+  }
+  .method-section-right h3 {
+    font-size: 55px;
+  }
+  .svg-container {
+    margin: 0 3% 80px 3%;
+  }
+  .quot-container {
+    margin: 200px 5% 70px 5%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .quot-content h3 {
+    font-size: 30px;
+  }
+  .logos-container {
+    margin: 0 3%;
+  }
+  .top-footer-left h3 {
+    font-size: 40px;
+  }
+  .top-footer-left h4 {
+    max-width: 90%;
+  }
+  .top-footer-left h5 {
+    padding-right: 30px;
+  }
 }

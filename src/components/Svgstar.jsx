@@ -216,7 +216,7 @@ const SvgStar = () => {
   };
   return (
     <div className="svg-container row">
-      <div className="svg-left col-6">
+      <div className="svg-left col-12 col-xl-6">
         <div onClick={() => setContentItem(5)}>
           <div className="svg-left-title1">
             <h3>UNIVERSITY VERSION</h3>
@@ -320,7 +320,7 @@ const SvgStar = () => {
           </div>
         </div>
       </div>
-      <div className="svg-right col-6">
+      <div className="svg-right col-12 col-xl-6">
         <h2>Strategic & Competitive Framework</h2>
         <p>Piecing together the enrollment puzzle</p>
         {contentComponent()}
