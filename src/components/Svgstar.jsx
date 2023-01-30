@@ -225,13 +225,7 @@ const SvgStar = () => {
             <h3>STRATEGY</h3>
           </div>
         </div>
-        <div
-          style={{
-            width: 600,
-            height: 600,
-            position: "relative",
-          }}
-        >
+        <div className="svg-main">
           <svg
             height="160"
             width="160"
