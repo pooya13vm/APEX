@@ -143,6 +143,29 @@ SVG {
   height: 600px;
   position: relative;
 }
+#svg-0 {
+  width: 300px;
+  left: 150px;
+}
+#svg-1 {
+  width: 300px;
+  top: 150px;
+  left: 300px;
+}
+#svg-2 {
+  width: 300px;
+  top: 300px;
+  left: 150px;
+}
+#svg-3 {
+  width: 300px;
+  top: 150px;
+}
+.svg-circle {
+  z-index: 100;
+  top: 230;
+  left: 230;
+}
 .svg-container {
   margin: 0 10.3% 80px 10.3%;
 }
@@ -581,6 +604,38 @@ form {
 }
 @media only screen and (max-width: 600px) {
   .svg-main {
-    width: 350px;
+    /* width: 350px; */
+  }
+  #svg-0 {
+    width: 200px;
+    left: 100px;
+  }
+  #svg-1 {
+    width: 200px;
+    top: 100px;
+    left: 200px;
+  }
+  #svg-2 {
+    width: 200px;
+    top: 200px;
+    left: 100px;
+  }
+  #svg-3 {
+    width: 200px;
+    top: 100px;
+  }
+  #center-svg {
+    width: 52px;
+    height: 52px;
+  }
+  .svg-center-text {
+    top: 177px;
+    left: 163px;
+  }
+  .svg-center-text p {
+    font-size: 0.9rem;
+  }
+  .svg-text {
+    font-size: 0.9px;
   }
 }

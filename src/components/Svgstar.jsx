@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../App.css";
 
-const SvgStar = () => {
+const SvgStar = ({ isMobile }) => {
   const colorsAction = [
     {
       first: "#db253e",
@@ -214,6 +214,9 @@ const SvgStar = () => {
       );
     }
   };
+  const centerSvgStyle = isMobile
+    ? { zIndex: 100, top: 120, left: 120, width: 160, height: 160 }
+    : { zIndex: 100, top: 230, left: 230, width: 160, height: 160 };
   return (
     <div className="svg-container row">
       <div className="svg-left col-12 col-xl-6">
@@ -226,12 +229,8 @@ const SvgStar = () => {
           </div>
         </div>
         <div className="svg-main">
-          <svg
-            height="160"
-            width="160"
-            style={{ zIndex: 100, top: 230, left: 230 }}
-          >
-            <circle cx="80" cy="80" r="80" fill="#fac544" />
+          <svg id="center-svg" style={centerSvgStyle}>
+            <circle cx="80" cy="80" r={isMobile ? "50" : "80"} fill="#fac544" />
           </svg>
           <div className="svg-center-text">
             <p>ENROLLED</p>
@@ -242,7 +241,7 @@ const SvgStar = () => {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 2 12 12"
               onClick={() => active(0)}
-              style={{ width: 300, left: 150 }}
+              id="svg-0"
             >
               <g fill={state.first}>
                 <path d="M 9 2 L 12 8 L 6 14 L 0 8 L 3 2" />
@@ -259,7 +258,7 @@ const SvgStar = () => {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 12 12"
               onClick={() => active(1)}
-              style={{ width: 300, top: 150, left: 300 }}
+              id="svg-1"
             >
               <g fill={state.second} onClick={() => active(1)}>
                 <path d="M 12 3 L 12 9 L 6 12 L 0 6 L 6 0" />
@@ -279,15 +278,25 @@ const SvgStar = () => {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 12 12"
               onClick={() => active(2)}
-              style={{ width: 300, top: 300, left: 150 }}
+              id="svg-2"
             >
               <g fill={state.third}>
                 <path d="M 12 6 L 9 12 L 3 12 L 0 6 L 6 0" />
               </g>
-              <text x="2.5" y="7.5" fill={state.text3} className="svg-text">
+              <text
+                x={isMobile ? "3" : "2.5"}
+                y="7.5"
+                fill={state.text3}
+                className="svg-text"
+              >
                 COMPETITIVE
               </text>
-              <text x="3.5" y="9" fill={state.text3} className="svg-text">
+              <text
+                x={isMobile ? "4" : "3.5"}
+                y="9"
+                fill={state.text3}
+                className="svg-text"
+              >
                 INSIGHTS
               </text>
             </svg>
@@ -296,18 +305,25 @@ const SvgStar = () => {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 12 12"
               onClick={() => active(3)}
-              style={{ width: 300, position: "absolute", top: 150 }}
+              id="svg-3"
             >
               <g fill={state.forth}>
                 <path d="M 12 6 L 6 12 L 0 9 L 0 3 L 6 0" />
               </g>
-              <text x="1.4" y="5.5" fill={state.text4} className="svg-text">
-                <i class="fa-thin fa-eye"></i>
-              </text>
-              <text x="2.5" y="5.5" fill={state.text4} className="svg-text">
+              <text
+                x={isMobile ? "3" : "2.5"}
+                y="5.5"
+                fill={state.text4}
+                className="svg-text"
+              >
                 STUDENT
               </text>
-              <text x="1" y="7" fill={state.text4} className="svg-text">
+              <text
+                x={isMobile ? "1.7" : "1"}
+                y="7"
+                fill={state.text4}
+                className="svg-text"
+              >
                 PERSPECTIVES
               </text>
             </svg>
