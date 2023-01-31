@@ -644,6 +644,8 @@ form {
   }
   .header_image {
     height: 310px;
+    background-size: cover;
+    margin-bottom: 65px;
   }
   hr {
     width: 182px !important;
@@ -692,5 +694,40 @@ form {
   }
   .strategy-btn {
     margin-top: 70px;
+  }
+  .quot-content h3 {
+    font-size: 25px;
+  }
+  .content-detail-container p {
+    font-size: 22px;
+  }
+  .quot-img img:nth-child(2) {
+    width: 48%;
+  }
+  .logos-container {
+    margin-top: 90px;
+  }
+  .top-footer {
+    height: 612px;
+    align-items: flex-start;
+  }
+  .top-footer-left h3 {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+  .top-footer-right input {
+    width: 323px;
+  }
+}
+@media only screen and (max-width: 493px) {
+  .circles_container {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .method-section-left {
+    margin-bottom: 30px;
+  }
+  .method-section-container {
+    height: max-content;
   }
 }
