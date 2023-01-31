@@ -26,7 +26,7 @@ function Method() {
             We then utilize an omni-channel approach to actively engage your
             potential students to turn them into enrollments.
           </p>
-          <button className="method-btn">Learn More</button>
+          <button className="method-btn">Download Blueprint</button>
         </div>
       </div>
     </div>

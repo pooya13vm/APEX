@@ -17,7 +17,11 @@ function Slogan() {
           challenge of declining enrollment
         </p>
       </div>
-      <a className="center-child">
+      <a
+        className="center-child"
+        href="../assets/documents/apex.pdf"
+        download="APEX_EDU_BLUEPRINT_23.pdf"
+      >
         <button
           style={{
             width: 255,
@@ -29,7 +33,7 @@ function Slogan() {
             border: "none",
           }}
         >
-          Learn More
+          Download Blueprint
         </button>
       </a>
     </>
