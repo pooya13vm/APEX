@@ -201,10 +201,8 @@ SVG {
 }
 .svg-left-title1 h3 {
   font-weight: 700;
-  color: #85714a;
 }
 .svg-left-title2 {
-  background-color: #fac544;
   width: 520px;
   height: 60px;
   display: flex;
@@ -355,6 +353,9 @@ form {
 }
 .quot-img img:nth-child(2) {
   margin-left: 177px;
+}
+.strategy-btn {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1730px) {
@@ -604,37 +605,37 @@ form {
 }
 @media only screen and (max-width: 600px) {
   .svg-main {
-    height: 400px;
-    width: 400px;
+    height: 320px;
+    width: 320px;
   }
   #svg-0 {
-    width: 200px;
-    left: 100px;
+    width: 160px;
+    left: 80px;
   }
   #svg-1 {
-    width: 200px;
-    top: 100px;
-    left: 200px;
+    width: 160px;
+    top: 80px;
+    left: 160px;
   }
   #svg-2 {
-    width: 200px;
-    top: 200px;
-    left: 100px;
+    width: 160px;
+    top: 160px;
+    left: 80px;
   }
   #svg-3 {
-    width: 200px;
-    top: 100px;
+    width: 160px;
+    top: 80px;
   }
-  #center-svg {
+  /* #center-svg {
     width: 52px;
     height: 52px;
-  }
+  } */
   .svg-center-text {
-    top: 177px;
-    left: 163px;
+    top: 142px;
+    left: 128px;
   }
   .svg-center-text p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .svg-text {
     font-size: 0.9px;
@@ -729,5 +730,8 @@ form {
   }
   .method-section-container {
     height: max-content;
+  }
+  .footer-down {
+    padding: 0 40px;
   }
 }

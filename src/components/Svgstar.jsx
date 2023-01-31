@@ -6,50 +6,60 @@ const SvgStar = ({ isMobile }) => {
   const colorsAction = [
     {
       first: "#db253e",
-      second: "#376667",
-      third: "#50295f",
-      forth: "#483d4f",
+      second: "#456D78",
+      third: "#4A3656",
+      forth: "#535369",
       text1: "#ffffff",
       text2: "#898993",
       text3: "#898993",
       text4: "#898993",
     },
     {
-      first: "#8f1929",
+      first: "#7A3948",
       second: "#3ebec1",
-      third: "#50295f",
-      forth: "#483d4f",
+      third: "#4A3656",
+      forth: "#535369",
       text1: "#898993",
       text2: "#ffffff",
       text3: "#898993",
       text4: "#898993",
     },
     {
-      first: "#8f1929",
-      second: "#376667",
+      first: "#7A3948",
+      second: "#456D78",
       third: "#7e14a8",
-      forth: "#483d4f",
+      forth: "#535369",
       text1: "#898993",
       text2: "#898993",
       text3: "#ffffff",
       text4: "#898993",
     },
     {
-      first: "#8f1929",
-      second: "#376667",
-      third: "#50295f",
+      first: "#7A3948",
+      second: "#456D78",
+      third: "#4A3656",
       forth: "#a18cad",
       text1: "#898993",
       text2: "#898993",
       text3: "#898993",
       text4: "#ffffff",
     },
+    {
+      first: "#7A3948",
+      second: "#456D78",
+      third: "#4A3656",
+      forth: "#535369",
+      text1: "#898993",
+      text2: "#898993",
+      text3: "#898993",
+      text4: "#898993",
+    },
   ];
   const [state, setState] = useState({
-    first: "#7A3947",
-    second: "#376667",
-    third: "#50295f",
-    forth: "#483d4f",
+    first: "#7A3948",
+    second: "#456D78",
+    third: "#4A3656",
+    forth: "#535369",
     text1: "#898993",
     text2: "#898993",
     text3: "#898993",
@@ -216,7 +226,7 @@ const SvgStar = ({ isMobile }) => {
     }
   };
   const centerSvgStyle = isMobile
-    ? { zIndex: 100, top: 120, left: 120, width: 160, height: 160 }
+    ? { zIndex: 100, top: 80, left: 80, width: 160, height: 160 }
     : { zIndex: 100, top: 230, left: 230, width: 160, height: 160 };
   return (
     <div className="svg-container row">
@@ -231,21 +241,43 @@ const SvgStar = ({ isMobile }) => {
             </p>
           </>
         )}
-        <div onClick={() => setContentItem(5)} className="strategy-btn">
+        <div
+          onClick={() => {
+            active(4);
+            setContentItem(5);
+          }}
+          className="strategy-btn"
+        >
           <div className="svg-left-title1">
-            <h3>UNIVERSITY VERSION</h3>
+            <h3 style={{ color: contentItem == 5 ? "#fac544" : "#85704B" }}>
+              UNIVERSITY VERSION
+            </h3>
           </div>
-          <div className="svg-left-title2">
+          <div
+            className="svg-left-title2"
+            style={{
+              backgroundColor: contentItem == 5 ? "#fac544" : "#85704B",
+            }}
+          >
             <h3>STRATEGY</h3>
           </div>
         </div>
         <div className="svg-main">
           <svg id="center-svg" style={centerSvgStyle}>
-            <circle cx="80" cy="80" r={isMobile ? "50" : "80"} fill="#fac544" />
+            <circle
+              cx="80"
+              cy="80"
+              r={isMobile ? "45" : "80"}
+              fill={contentItem != 5 ? "#fac544" : "#85704B"}
+            />
           </svg>
           <div className="svg-center-text">
-            <p>ENROLLED</p>
-            <p>STUDENTS</p>
+            <p style={{ color: contentItem != 5 ? "#000" : "#3B3B4C" }}>
+              ENROLLED
+            </p>
+            <p style={{ color: contentItem != 5 ? "#000" : "#3B3B4C" }}>
+              STUDENTS
+            </p>
           </div>
           <div style={{ position: "relative" }}>
             <svg
