@@ -17,11 +17,13 @@ a {
   display: flex;
   justify-content: center;
 }
-.top_line {
+.top_line,
+.top-line-footer {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
 }
+
 .line {
   height: 8px;
   flex-grow: 1;

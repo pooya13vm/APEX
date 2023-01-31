@@ -2,7 +2,7 @@ import apex from "../assets/images/Group 110.png";
 function Footer() {
   return (
     <footer className="footer">
-      <div className="top_line">
+      <div className="top-line-footer">
         <div style={{ backgroundColor: "#db253e" }} className="line"></div>
         <div style={{ backgroundColor: "#fac544" }} className="line"></div>
         <div style={{ backgroundColor: "#3ebec1" }} className="line"></div>
