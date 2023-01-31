@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../App.css";
 
 const SvgStar = ({ isMobile }) => {
+  // const isMobile = useMediaQuery({ query: "(max-width: 600px)" });
   const colorsAction = [
     {
       first: "#db253e",
@@ -220,7 +221,17 @@ const SvgStar = ({ isMobile }) => {
   return (
     <div className="svg-container row">
       <div className="svg-left col-12 col-xl-6">
-        <div onClick={() => setContentItem(5)}>
+        {isMobile && (
+          <>
+            <h2 className="svg-right-title">
+              Strategic & Competitive Framework
+            </h2>
+            <p className="svg-right-title2">
+              Piecing together the enrollment puzzle
+            </p>
+          </>
+        )}
+        <div onClick={() => setContentItem(5)} className="strategy-btn">
           <div className="svg-left-title1">
             <h3>UNIVERSITY VERSION</h3>
           </div>
@@ -331,8 +342,17 @@ const SvgStar = ({ isMobile }) => {
         </div>
       </div>
       <div className="svg-right col-12 col-xl-6">
-        <h2>Strategic & Competitive Framework</h2>
-        <p>Piecing together the enrollment puzzle</p>
+        {!isMobile && (
+          <>
+            <h2 className="svg-right-title">
+              Strategic & Competitive Framework
+            </h2>
+            <p className="svg-right-title2">
+              Piecing together the enrollment puzzle
+            </p>
+          </>
+        )}
+
         {contentComponent()}
       </div>
     </div>
