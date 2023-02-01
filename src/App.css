@@ -64,6 +64,9 @@ button {
   margin-top: 15%;
   margin-right: 12%;
   margin-left: 12%;
+  visibility: visible;
+  animation-name: fadeInDown;
+  animation-delay: 0.2s;
 }
 
 .circle_item {

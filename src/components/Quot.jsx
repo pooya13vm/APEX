@@ -8,7 +8,7 @@ function Quot() {
         <div className="col-3 quot-img">
           <img src={quot1} className="img-fluid" />
         </div>
-        <div className="col-7 quot-content">
+        <div className="col-7 quot-content" data-aos="fade-left">
           <h3>
             “For the last 4 years, Apex Media Partners has helped our team
             understand and execute the best audience targeting tactics and
@@ -21,8 +21,8 @@ function Quot() {
           </div>
         </div>
       </div>
-      <div className="row quot-container second-quot">
-        <div className="col-7 quot-content">
+      <div className="row quot-container second-quot" data-aos="fade-bottom">
+        <div className="col-7 quot-content" data-aos="fade-right">
           <h3>
             “From the beginning, Apex Media understood our metrics and the need
             to obtain new students through their channels that met our cost per

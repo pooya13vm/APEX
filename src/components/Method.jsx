@@ -4,10 +4,11 @@ import num3 from "../assets/images/Group 113.png";
 import num4 from "../assets/images/Group 114.png";
 import polygon from "../assets/images/Polygon 1.png";
 import pdf from "../assets/documents/apex.pdf";
+
 function Method() {
   return (
     <div className="method-section-container row">
-      <div className="method-section-left col-6">
+      <div className="method-section-left col-6" data-aos="fade-right">
         <img src={num1} className="img-fluid" />
         <img src={polygon} className="polygon img-fluid" />
         <img src={num2} className="img-fluid" />
@@ -16,6 +17,7 @@ function Method() {
         <img src={polygon} className="polygon img-fluid" />
         <img src={num4} className="img-fluid" />
       </div>
+
       <div className="col-6 method-right">
         <div className="method-section-right">
           <h3>OUR METHOD</h3>

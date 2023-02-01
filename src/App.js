@@ -7,10 +7,10 @@ import Quot from "./components/Quot";
 import LogoRow from "./components/LogoRow";
 import Footer from "./components/Footer";
 import { useMediaQuery } from "react-responsive";
+
 function App() {
   const isMobile = useMediaQuery({ query: "(max-width: 600px)" });
-  // const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
-  // const isRetina = useMediaQuery({ query: "(min-resolution: 2dppx)" });
+
   return (
     <>
       <Header />

@@ -373,7 +373,7 @@ const SvgStar = ({ isMobile }) => {
           </div>
         </div>
       </div>
-      <div className="svg-right col-12 col-xl-6">
+      <div className="svg-right col-12 col-xl-6" data-aos="fade-left">
         {!isMobile && (
           <>
             <h2 className="svg-right-title">

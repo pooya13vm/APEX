@@ -5,7 +5,7 @@ import logo4 from "../assets/images/Group 134.png";
 import logo5 from "../assets/images/Group 135.png";
 function LogoRow() {
   return (
-    <div className="logos-container">
+    <div className="logos-container" data-aos="zoom-out">
       <img src={logo5} className="img-fluid" />
       <img src={logo4} className="img-fluid" />
       <img src={logo3} className="img-fluid" />

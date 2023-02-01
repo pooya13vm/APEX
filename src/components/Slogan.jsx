@@ -12,7 +12,7 @@ function Slogan() {
           }}
         />
       </div>
-      <div className="slogan-text">
+      <div className="slogan-text" data-aos="fade-down-left">
         <p>
           Apex Media has partnered with universities for decades to face the
           challenge of declining enrollment

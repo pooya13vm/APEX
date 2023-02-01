@@ -2,7 +2,7 @@ import "../App.css";
 function Header() {
   return (
     <div className="header_image">
-      <div className="top_line">
+      <div className="top_line" data-aos="fade-right">
         <div style={{ backgroundColor: "#db253e" }} className="line"></div>
         <div style={{ backgroundColor: "#fac544" }} className="line"></div>
         <div style={{ backgroundColor: "#3ebec1" }} className="line"></div>
