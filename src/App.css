@@ -297,8 +297,7 @@ SVG {
   justify-content: space-between;
 }
 .logos-container img {
-  width: 238px;
-  height: 238px;
+  width: 17%;
 }
 .footer {
   margin-top: 100px;
@@ -446,8 +445,7 @@ form {
     width: 110px;
   }
   .logos-container img {
-    width: 175px;
-    height: 175px;
+    width: 15%px;
   }
   .logos-container {
     margin: 0 6%;

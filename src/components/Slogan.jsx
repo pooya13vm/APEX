@@ -1,3 +1,4 @@
+import pdf from "../assets/documents/apex.pdf";
 function Slogan() {
   return (
     <>
@@ -19,7 +20,7 @@ function Slogan() {
       </div>
       <a
         className="center-child"
-        href="../assets/documents/apex.pdf"
+        href={pdf}
         download="APEX_EDU_BLUEPRINT_23.pdf"
       >
         <button
