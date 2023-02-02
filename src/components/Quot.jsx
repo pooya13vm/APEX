@@ -52,7 +52,6 @@ function Quot() {
       </div>
       <Modal show={show} onHide={handleClose} onClick={handleClose}>
         <Iframe
-          // style={{ width: "500px", height: "315px" }}
           width="500px"
           height="315px"
           url="https://www.youtube.com/embed?v=Tgob9XSod7Q&t=238s"

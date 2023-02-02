@@ -185,6 +185,7 @@ SVG {
 }
 .svg-container {
   margin: 0 10.3% 80px 10.3%;
+  overflow: hidden;
 }
 .svg-text {
   font-size: 1px;
@@ -274,6 +275,7 @@ SVG {
 .quot-container {
   margin: 220px 1.3% 70px 10.3%;
   padding-bottom: 100px;
+  overflow: hidden;
 }
 .quot-img {
   justify-self: center;
@@ -309,12 +311,14 @@ SVG {
   display: flex;
   margin: 0 10.3%;
   justify-content: space-between;
+  overflow: hidden;
 }
 .logos-container img {
   width: 17%;
 }
 .footer {
   margin-top: 100px;
+  overflow: hidden;
 }
 .top-footer {
   height: 514px;
