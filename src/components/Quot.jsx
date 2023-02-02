@@ -1,7 +1,14 @@
+import { useState } from "react";
 import quot1 from "../assets/images/Group 117.png";
 import quot2 from "../assets/images/Group 118.png";
 import play from "../assets/images/Group 119.png";
+import { Modal } from "react-bootstrap";
+import Iframe from "react-iframe";
 function Quot() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
       <div className="row quot-container">
@@ -35,9 +42,23 @@ function Quot() {
         </div>
         <div className="col-3 quot-img">
           <img src={quot2} className="img-fluid" />
-          <img src={play} className="img-fluid" />
+          <img
+            src={play}
+            className="img-fluid play-video-img"
+            onClick={handleShow}
+            alt="youtube video PLAY"
+          />
         </div>
       </div>
+      <Modal show={show} onHide={handleClose} onClick={handleClose}>
+        <Iframe
+          // style={{ width: "500px", height: "315px" }}
+          width="500px"
+          height="315px"
+          url="https://www.youtube.com/embed?v=Tgob9XSod7Q&t=238s"
+          allowFullScreen
+        ></Iframe>
+      </Modal>
     </>
   );
 }
