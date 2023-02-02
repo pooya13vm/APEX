@@ -385,6 +385,7 @@ form {
   }
   .svg-container {
     margin: 0 5% 80px 5%;
+    width: fit-content;
   }
   .header_image {
     /* margin: 80px 10.3% 0px 10.3%; */
@@ -419,6 +420,7 @@ form {
   }
   .logos-container {
     margin: 0 3%;
+    width: fit-content;
   }
   .top-footer-left h3 {
     font-size: 40px;
@@ -429,9 +431,9 @@ form {
   .top-footer-left h5 {
     padding-right: 30px;
   }
-  .method-section-left {
+  /* .method-section-left {
     justify-content: start;
-  }
+  } */
 }
 @media only screen and (max-width: 1292px) {
   .header_image h1 {
