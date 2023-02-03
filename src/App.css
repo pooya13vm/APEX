@@ -290,9 +290,9 @@ SVG {
 .play-video-img {
   cursor: pointer;
 }
-.quot-img img:nth-child(2) {
+/* .quot-img img:nth-child(2) {
   width: 50%;
-}
+} */
 .content-detail-container {
   margin-top: 30px;
   margin-left: 5px;

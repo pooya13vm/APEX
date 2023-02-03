@@ -3,7 +3,7 @@ import quot1 from "../assets/images/Group 117.png";
 import quot2 from "../assets/images/Group 118.png";
 import play from "../assets/images/Group 119.png";
 import { Modal } from "react-bootstrap";
-import Iframe from "react-iframe";
+
 function Quot() {
   const [show, setShow] = useState(false);
 
@@ -51,12 +51,15 @@ function Quot() {
         </div>
       </div>
       <Modal show={show} onHide={handleClose} onClick={handleClose}>
-        <Iframe
-          width="500px"
-          height="315px"
-          url="https://www.youtube.com/embed?v=Tgob9XSod7Q&t=238s"
-          allowFullScreen
-        ></Iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Tgob9XSod7Q"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </Modal>
     </>
   );
