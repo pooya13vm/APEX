@@ -240,6 +240,7 @@ SVG {
 .svg-right {
   padding-top: 140px;
   overflow: hidden;
+  height: 800px;
 }
 .svg-right-title {
   font-size: 40px;
@@ -495,6 +496,7 @@ form {
   }
   .svg-right {
     padding-top: 60px;
+    height: fit-content;
   }
 }
 @media only screen and (max-width: 1060px) {
