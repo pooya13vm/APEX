@@ -639,25 +639,28 @@ form {
   #svg-0 {
     width: 160px;
     left: 80px;
+    position: absolute;
   }
   #svg-1 {
     width: 160px;
     top: 80px;
     left: 160px;
+    position: absolute;
   }
   #svg-2 {
     width: 160px;
     top: 160px;
     left: 80px;
+    position: absolute;
   }
   #svg-3 {
     width: 160px;
     top: 80px;
+    position: absolute;
   }
-  /* #center-svg {
-    width: 52px;
-    height: 52px;
-  } */
+  #center-svg {
+    position: absolute;
+  }
   .svg-center-text {
     top: 142px;
     left: 128px;
