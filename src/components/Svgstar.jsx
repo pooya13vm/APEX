@@ -76,7 +76,9 @@ const SvgStar = ({ isMobile }) => {
     if (contentItem == 5) {
       return (
         <div>
-          <h3 className="title">Strategy and Planning</h3>
+          <h3 className="title" style={{ color: "#fac544" }}>
+            Strategy and Planning
+          </h3>
           <div className="content-container">
             <h4>Benefits</h4>
             <p className="content">
@@ -106,7 +108,9 @@ const SvgStar = ({ isMobile }) => {
     if (contentItem == 0) {
       return (
         <div>
-          <h3 className="title">SITUATION ASSESSMENT</h3>
+          <h3 className="title" style={{ color: colorsAction[0].first }}>
+            SITUATION ASSESSMENT
+          </h3>
           <div className="content-container">
             <h4>Activities</h4>
             <p className="content">
@@ -136,7 +140,9 @@ const SvgStar = ({ isMobile }) => {
     if (contentItem == 1) {
       return (
         <div>
-          <h3 className="title">ENROLLMENT MANAGEMENT FUNNEL</h3>
+          <h3 className="title" style={{ color: colorsAction[1].second }}>
+            ENROLLMENT MANAGEMENT FUNNEL
+          </h3>
           <div className="content-container">
             <h4>Activities</h4>
             <p className="content">
@@ -167,7 +173,9 @@ const SvgStar = ({ isMobile }) => {
     if (contentItem == 2) {
       return (
         <div>
-          <h3 className="title">COMPETITIVE INSIGHTS</h3>
+          <h3 className="title" style={{ color: colorsAction[2].third }}>
+            COMPETITIVE INSIGHTS
+          </h3>
           <div className="content-container">
             <h4>Activities</h4>
             <p className="content">
@@ -197,7 +205,9 @@ const SvgStar = ({ isMobile }) => {
     if (contentItem == 3) {
       return (
         <div>
-          <h3 className="title">STUDENT PERSPECTIVES</h3>
+          <h3 className="title" style={{ color: colorsAction[3].forth }}>
+            STUDENT PERSPECTIVES
+          </h3>
           <div className="content-container">
             <h4>Activities</h4>
             <p className="content">
@@ -259,13 +269,13 @@ const SvgStar = ({ isMobile }) => {
               padding: 10,
             }}
           >
-            Click on the puzzle to start
+            Click on the Blueprint to start
           </p>
         </div>
         {isMobile && (
           <>
             <h2 className="svg-right-title">
-              Strategic & Competitive Framework
+              Strategic & Competitive Blueprint
             </h2>
             <p className="svg-right-title2">
               Piecing together the enrollment puzzle
