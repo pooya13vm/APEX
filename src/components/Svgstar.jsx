@@ -66,6 +66,7 @@ const SvgStar = ({ isMobile }) => {
     text4: "#898993",
   });
   const [contentItem, setContentItem] = useState(5);
+  const [showShadow, setShowShadow] = useState(true);
   const active = (num) => {
     console.log(num);
     setState(colorsAction[num]);
@@ -230,7 +231,38 @@ const SvgStar = ({ isMobile }) => {
     : { zIndex: 100, top: 230, left: 230, width: 160, height: 160 };
   return (
     <div className="svg-container row">
-      <div className="svg-left col-12 col-xl-6">
+      <div
+        className="svg-left col-12 col-xl-6"
+        onClick={() => setShowShadow(false)}
+      >
+        <div
+          style={{
+            width: "80%",
+            height: "100%",
+            position: "absolute",
+            backgroundColor: "#ffffff60",
+            marginLeft: "10%",
+            display: showShadow ? "flex" : "none",
+            justifyContent: "center",
+            alignItems: "center",
+            zIndex: 20000,
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+          }}
+        >
+          <p
+            style={{
+              fontSize: 24,
+              fontWeight: 600,
+              textAlign: "center",
+              padding: 10,
+            }}
+          >
+            Click on the puzzle to start
+          </p>
+        </div>
         {isMobile && (
           <>
             <h2 className="svg-right-title">
