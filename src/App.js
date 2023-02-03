@@ -17,7 +17,7 @@ function App() {
       <Slogan />
       <Method />
       <SvgStar isMobile={isMobile} />
-      <Quot />
+      <Quot isMobile={isMobile} />
       <LogoRow />
       <Footer />
     </>

@@ -4,7 +4,7 @@ import quot2 from "../assets/images/Group 118.png";
 import play from "../assets/images/Group 119.png";
 import { Modal } from "react-bootstrap";
 
-function Quot() {
+function Quot({ isMobile }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -52,8 +52,8 @@ function Quot() {
       </div>
       <Modal show={show} onHide={handleClose} onClick={handleClose}>
         <iframe
-          width="560"
-          height="315"
+          width={isMobile ? "370" : "560"}
+          height={isMobile ? "208" : "315"}
           src="https://www.youtube.com/embed/Tgob9XSod7Q"
           title="YouTube video player"
           frameborder="0"
