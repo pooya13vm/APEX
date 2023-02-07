@@ -1,5 +1,9 @@
+import { useState } from "react";
 import pdf from "../assets/documents/apex.pdf";
+import ModalScreen from "./Modal";
+
 function Slogan() {
+  const [show, setShow] = useState(false);
   return (
     <>
       <div className="center-child">
@@ -20,8 +24,8 @@ function Slogan() {
       </div>
       <a
         className="center-child"
-        href={pdf}
-        download="APEX_EDU_BLUEPRINT_23.pdf"
+        // href={pdf}
+        // download="APEX_EDU_BLUEPRINT_23.pdf"
       >
         <button
           style={{
@@ -33,10 +37,12 @@ function Slogan() {
             backgroundColor: "#3A394B",
             border: "none",
           }}
+          onClick={() => setShow(true)}
         >
           Download Blueprint
         </button>
       </a>
+      <ModalScreen show={show} setShow={setShow} />
     </>
   );
 }

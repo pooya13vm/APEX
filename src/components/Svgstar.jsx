@@ -305,20 +305,11 @@ const SvgStar = ({ isMobile }) => {
         </div>
         <div className="svg-main">
           <svg id="center-svg" style={centerSvgStyle}>
-            <circle
-              cx="80"
-              cy="80"
-              r={isMobile ? "45" : "80"}
-              fill={contentItem != 5 ? "#fac544" : "#85704B"}
-            />
+            <circle cx="80" cy="80" r={isMobile ? "45" : "80"} fill="#fac544" />
           </svg>
           <div className="svg-center-text">
-            <p style={{ color: contentItem != 5 ? "#000" : "#3B3B4C" }}>
-              ENROLLED
-            </p>
-            <p style={{ color: contentItem != 5 ? "#000" : "#3B3B4C" }}>
-              STUDENTS
-            </p>
+            <p style={{ color: "#000" }}>ENROLLED</p>
+            <p style={{ color: "#000" }}>STUDENTS</p>
           </div>
           <div style={{ position: "relative" }}>
             <svg
@@ -337,26 +328,27 @@ const SvgStar = ({ isMobile }) => {
                 ASSESSMENT
               </text>
             </svg>
-
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 12 12"
-              onClick={() => active(1)}
-              id="svg-1"
-            >
-              <g fill={state.second} onClick={() => active(1)}>
-                <path d="M 12 3 L 12 9 L 6 12 L 0 6 L 6 0" />
-              </g>
-              <text x="4.5" y="5" fill={state.text2} className="svg-text">
-                ENROLLMENT
-              </text>
-              <text x="6" y="6.5" fill={state.text2} className="svg-text">
-                FUNNEL
-              </text>
-              <text x="4" y="8" fill={state.text2} className="svg-text">
-                MANAGEMENT
-              </text>
-            </svg>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 12 12"
+                onClick={() => active(1)}
+                id="svg-1"
+              >
+                <g fill={state.second} onClick={() => active(1)}>
+                  <path d="M 12 3 L 12 9 L 6 12 L 0 6 L 6 0" />
+                </g>
+                <text x="4.5" y="5" fill={state.text2} className="svg-text">
+                  ENROLLMENT
+                </text>
+                <text x="6" y="6.5" fill={state.text2} className="svg-text">
+                  FUNNEL
+                </text>
+                <text x="4" y="8" fill={state.text2} className="svg-text">
+                  MANAGEMENT
+                </text>
+              </svg>
+            </div>
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
