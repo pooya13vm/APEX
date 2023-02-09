@@ -1,22 +1,22 @@
-import { useState } from "react";
 import { Modal } from "react-bootstrap";
 import "../App.css";
-import pdf from "../assets/documents/apex.pdf";
 import { saveAs } from "file-saver";
 
 const ModalScreen = ({ show, setShow }) => {
   const handleClose = () => setShow(false);
+
   function handleSubmit(e) {
-    e.preventDefault();
-    console.log("You clicked submit.");
+    try {
+      saveAs(
+        "https://zingy-mousse-4797d3.netlify.app/static/media/apex.28f8afce527389ea822d.pdf",
+        "file.pdf"
+      );
+      e.preventDefault();
+    } catch (error) {
+      console.log(error);
+    }
   }
-  const [pdfData, setPdfData] = useState(null);
-  const handleDownload = () => {
-    const pdfFile = new Blob(["../assets/documents/apex.pdf"], {
-      type: "application/pdf",
-    });
-    saveAs(pdfFile, "file.pdf");
-  };
+
   return (
     <Modal
       show={show}
@@ -32,8 +32,7 @@ const ModalScreen = ({ show, setShow }) => {
         <form
           style={{ alignItems: "center" }}
           className="modal-form"
-          // onSubmit={handleSubmit}
-          action="https://formsubmit.co/pooya13vm@gmail.com"
+          action="https://formsubmit.co/khartless@apexmedia.com"
           method="POST"
         >
           <input
@@ -43,14 +42,12 @@ const ModalScreen = ({ show, setShow }) => {
             required
           />
           <input type="email" name="Email:" placeholder="Email*" required />
-          <a
-            href={pdf}
-            download="APEX_EDU_BLUEPRINT_23.pdf"
-            style={{ margin: 100 }}
+          <button
+            type="submit"
+            onClick={() => {
+              handleSubmit();
+            }}
           >
-            hello
-          </a>
-          <button type="submit" onClick={() => handleDownload()}>
             Submit
           </button>
         </form>
