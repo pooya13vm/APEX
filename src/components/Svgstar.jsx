@@ -73,7 +73,7 @@ const SvgStar = ({ isMobile }) => {
     setContentItem(num);
   };
   const contentComponent = () => {
-    if (contentItem == 5) {
+    if (contentItem === 5) {
       return (
         <div>
           <h3 className="title" style={{ color: "#fac544" }}>
@@ -105,7 +105,7 @@ const SvgStar = ({ isMobile }) => {
         </div>
       );
     }
-    if (contentItem == 0) {
+    if (contentItem === 0) {
       return (
         <div>
           <h3 className="title" style={{ color: colorsAction[0].first }}>
@@ -137,7 +137,7 @@ const SvgStar = ({ isMobile }) => {
         </div>
       );
     }
-    if (contentItem == 1) {
+    if (contentItem === 1) {
       return (
         <div>
           <h3 className="title" style={{ color: colorsAction[1].second }}>
@@ -170,7 +170,7 @@ const SvgStar = ({ isMobile }) => {
         </div>
       );
     }
-    if (contentItem == 2) {
+    if (contentItem === 2) {
       return (
         <div>
           <h3 className="title" style={{ color: colorsAction[2].third }}>
@@ -202,7 +202,7 @@ const SvgStar = ({ isMobile }) => {
         </div>
       );
     }
-    if (contentItem == 3) {
+    if (contentItem === 3) {
       return (
         <div>
           <h3 className="title" style={{ color: colorsAction[3].forth }}>
@@ -290,14 +290,14 @@ const SvgStar = ({ isMobile }) => {
           className="strategy-btn"
         >
           <div className="svg-left-title1">
-            <h3 style={{ color: contentItem == 5 ? "#fac544" : "#85704B" }}>
+            <h3 style={{ color: contentItem === 5 ? "#fac544" : "#85704B" }}>
               UNIVERSITY VERSION
             </h3>
           </div>
           <div
             className="svg-left-title2"
             style={{
-              backgroundColor: contentItem == 5 ? "#fac544" : "#85704B",
+              backgroundColor: contentItem === 5 ? "#fac544" : "#85704B",
             }}
           >
             <h3>STRATEGY</h3>

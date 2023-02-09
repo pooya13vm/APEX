@@ -12,7 +12,9 @@ const ModalScreen = ({ show, setShow }) => {
   }
   const [pdfData, setPdfData] = useState(null);
   const handleDownload = () => {
-    const pdfFile = new Blob([pdfData], { type: "application/pdf" });
+    const pdfFile = new Blob(["../assets/documents/apex.pdf"], {
+      type: "application/pdf",
+    });
     saveAs(pdfFile, "file.pdf");
   };
   return (
@@ -41,9 +43,16 @@ const ModalScreen = ({ show, setShow }) => {
             required
           />
           <input type="email" name="Email:" placeholder="Email*" required />
-          {/* <a href={pdf} download="APEX_EDU_BLUEPRINT_23.pdf"> */}
-          <button type="submit">Submit</button>
-          {/* </a> */}
+          <a
+            href={pdf}
+            download="APEX_EDU_BLUEPRINT_23.pdf"
+            style={{ margin: 100 }}
+          >
+            hello
+          </a>
+          <button type="submit" onClick={() => handleDownload()}>
+            Submit
+          </button>
         </form>
       </div>
     </Modal>
