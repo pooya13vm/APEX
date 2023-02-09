@@ -400,7 +400,45 @@ form {
 .modal-dialog {
   max-width: fit-content !important;
 }
-
+.form-modal-container {
+  background-color: #eeeeef;
+  text-align: center;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-modal-container h2 {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-weight: 800;
+  font-size: 50px;
+  color: #3a394b;
+}
+.form-modal-container h4 {
+  width: fit-content;
+  margin: 0 75px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #3a394b;
+}
+.modal-form input {
+  width: 300px;
+  height: 63px;
+  margin-top: 30px;
+  padding-left: 20px;
+}
+.modal-form button {
+  width: 300px;
+  height: 63px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fac544;
+  background-color: #3a394b;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
 @media only screen and (max-width: 1730px) {
   .header_image h1 {
     font-size: 75px;
@@ -601,6 +639,10 @@ form {
   .footer-down p {
     font-size: 20px;
   }
+  .form-modal-container h4 {
+    font-size: 1.5rem;
+    margin: 0 30px;
+  }
 }
 @media only screen and (max-width: 660px) {
   .footer-down {
@@ -761,6 +803,13 @@ form {
   .top-footer-right input {
     width: 323px;
   }
+  .form-modal-container h2 {
+    font-size: 35px;
+  }
+  .form-modal-container h4 {
+    font-size: 1.1rem;
+    margin: 0 15px;
+  }
 }
 @media only screen and (max-width: 493px) {
   .circles_container {
@@ -775,5 +824,14 @@ form {
   }
   .footer-down {
     padding: 0 40px;
+  }
+  .form-modal-container h2 {
+    width: 300px;
+  }
+  .form-modal-container h4 {
+    width: 300px;
+  }
+  .modal {
+    left: 5% !important;
   }
 }

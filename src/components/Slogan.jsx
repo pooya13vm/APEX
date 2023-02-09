@@ -4,6 +4,7 @@ import ModalScreen from "./Modal";
 
 function Slogan() {
   const [show, setShow] = useState(false);
+
   return (
     <>
       <div className="center-child">

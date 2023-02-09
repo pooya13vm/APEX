@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Modal } from "react-bootstrap";
 import "../App.css";
 import pdf from "../assets/documents/apex.pdf";
@@ -9,7 +10,11 @@ const ModalScreen = ({ show, setShow }) => {
     e.preventDefault();
     console.log("You clicked submit.");
   }
-
+  const [pdfData, setPdfData] = useState(null);
+  const handleDownload = () => {
+    const pdfFile = new Blob([pdfData], { type: "application/pdf" });
+    saveAs(pdfFile, "file.pdf");
+  };
   return (
     <Modal
       show={show}
