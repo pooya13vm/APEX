@@ -1,5 +1,8 @@
 import apex from "../assets/images/Group 110.png";
 function Footer() {
+  const handleForm = (e) => {
+    e.preventDefault();
+  };
   return (
     <footer className="footer">
       <div className="top-line-footer">
@@ -18,11 +21,15 @@ function Footer() {
           <h5> Let us help you develop a plan to get more students now!</h5>
         </div>
         <div className="top-footer-right">
-          <form>
-            <input type="text" placeholder="Full Name*" />
-            <input type="email" placeholder="Email*" />
+          <form
+            action="https://formsubmit.co/khartless@apexmedia.com"
+            method="POST"
+          >
+            <input type="text" placeholder="Full Name*" name="full name:" />
+            <input type="email" placeholder="Email*" name="Email:" />
 
             <button
+              type="submit"
               style={{
                 width: 255,
                 height: 63,
@@ -32,6 +39,7 @@ function Footer() {
                 backgroundColor: "#3A394B",
                 border: "none",
               }}
+              onClick={handleForm}
             >
               Submit
             </button>
