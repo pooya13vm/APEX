@@ -22,7 +22,7 @@ function Footer() {
         </div>
         <div className="top-footer-right">
           <form
-            action="https://formsubmit.co/khartless@apexmedia.com"
+            action="https://formsubmit.co/lucy_hoger@yahoo.com"
             method="POST"
           >
             <input type="text" placeholder="Full Name*" name="full name:" />
