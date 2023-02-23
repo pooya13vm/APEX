@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../App.css";
+import mySvg from "../assets/images/Clickhere.svg";
 
 const SvgStar = ({ isMobile }) => {
   // const isMobile = useMediaQuery({ query: "(max-width: 600px)" });
@@ -250,7 +251,7 @@ const SvgStar = ({ isMobile }) => {
             width: "100%",
             height: "100%",
             position: "absolute",
-            backgroundColor: "#ffffff60",
+            backgroundColor: "#ffffffd7",
             display: showShadow ? "flex" : "none",
             justifyContent: "center",
             alignItems: "center",
@@ -259,18 +260,21 @@ const SvgStar = ({ isMobile }) => {
             left: 0,
             right: 0,
             bottom: 0,
+            transitionDelay: 4,
+            transitionProperty: "all",
+            transitionTimingFunction: "ease",
           }}
         >
-          <p
+          <div
             style={{
-              fontSize: 24,
-              fontWeight: 600,
-              textAlign: "center",
-              padding: 10,
+              height: "65%",
+              width: "65%",
+              backgroundImage: `url(${mySvg})`,
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
             }}
-          >
-            Click on the Blueprint to start
-          </p>
+          ></div>
         </div>
         {isMobile && (
           <>

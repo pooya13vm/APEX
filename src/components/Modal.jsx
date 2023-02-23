@@ -1,17 +1,13 @@
-// import { useState } from "react";
 import { Modal } from "react-bootstrap";
 import "../App.css";
 import { saveAs } from "file-saver";
 
 const ModalScreen = ({ show, setShow }) => {
   const handleClose = () => setShow(false);
-  // const [input1val, setInput1val] = useState("");
-  // const [input2val, setInput2val] = useState("");
 
   function handleSubmit(e) {
     try {
       saveAs(
-        // "https://www.docdroid.net/t1EFUOc/apex-edu-brochure-ae-r2-pdf",
         "https://pdfhost.io/v/szs3nmqhd_APEX_EDU_Brochure_AE_R2",
         "file.pdf"
       );
@@ -20,7 +16,6 @@ const ModalScreen = ({ show, setShow }) => {
       console.log(error);
     }
   }
-
   return (
     <Modal
       show={show}
@@ -43,23 +38,13 @@ const ModalScreen = ({ show, setShow }) => {
             type="text"
             name="Full name:"
             placeholder="Full Name*"
-            // onChange={(val) => setInput1val(val)}
             required
           />
-          <input
-            type="email"
-            name="Email:"
-            placeholder="Email*"
-            // onChange={(val) => setInput2val(val)}
-            required
-          />
+          <input type="email" name="Email:" placeholder="Email*" required />
           <button
             type="submit"
             onClick={() => {
-              // if (input1val.length > 0 && input2val.length > 0) {
-              //   console.log("inputs are filled");
               handleSubmit();
-              // }
             }}
           >
             Submit
