@@ -26,7 +26,10 @@ body {
   flex-wrap: nowrap;
   flex-direction: row;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 .line {
   height: 8px;
   flex-grow: 1;
@@ -447,13 +450,14 @@ SVG {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: wrap;
 }
 .footer-top-logo-container img {
   height: 100px;
 }
 .footer-yellow-container {
   width: 100%;
-  height: 400px;
+  /* height: 400px; */
   background-color: #fac544;
   display: flex;
   flex-direction: column;
@@ -581,7 +585,7 @@ form {
 }
 @media only screen and (max-width: 1730px) {
   .header_image h1 {
-    font-size: 75px;
+    font-size: 5rem;
   }
   .circle_item {
     height: 210px;
@@ -598,19 +602,23 @@ form {
     width: fit-content;
   }
   .header_image {
-    /* margin: 80px 10.3% 0px 10.3%; */
+    margin: 80px 10.3% 24px 10.3%;
     background-size: auto;
   }
   .circles_container {
-    margin-top: 22%;
+    margin-top: 12%;
   }
 }
 @media only screen and (max-width: 1500px) {
   .method-section-right {
     margin: 0 50px 0 100px;
   }
+  .slogan-text p {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
-@media only screen and (max-width: 1330px) {
+@media only screen and (max-width: 1390px) {
   .slogan-text h2 {
     font-size: 40px;
   }
@@ -642,6 +650,12 @@ form {
   .top-footer-left h5 {
     padding-right: 30px;
   }
+  .circles_container {
+    margin-top: 5%;
+  }
+  .top-footer {
+    padding: 0 10.5% 0 10.5%;
+  }
   /* .method-section-left {
     justify-content: start;
   } */
@@ -651,7 +665,7 @@ form {
     font-size: 60px;
   }
   .circles_container {
-    margin-top: 32%;
+    margin-top: 15%;
   }
   .method-section-right {
     width: 100%;
@@ -675,7 +689,7 @@ form {
     display: none;
   }
   .circles_container {
-    margin-top: 26%;
+    /* margin-top: 26%; */
   }
   .method-section-container {
     height: 540px;
@@ -683,6 +697,9 @@ form {
   .svg-right {
     padding-top: 60px;
     height: fit-content;
+  }
+  .center-child {
+    margin-top: 30px;
   }
 }
 @media only screen and (max-width: 1060px) {
@@ -720,14 +737,18 @@ form {
     width: 120px;
     height: 120px;
   }
+  .slogan-text {
+    margin: 35px 120px 0 120px;
+  }
 }
 @media only screen and (max-width: 964px) {
   .header_image {
     background-size: contain;
     height: 510px;
+    margin-bottom: -50px;
   }
   .circles_container {
-    margin-top: 15%;
+    margin-top: 3%;
   }
   .circle_item {
     width: 160px;
@@ -738,6 +759,13 @@ form {
   }
   .method-right {
     text-align: center;
+  }
+  .slogan-image-container {
+    height: fit-content;
+  }
+  .ourValue-container {
+    flex-direction: column;
+    height: 560px;
   }
 }
 @media only screen and (max-width: 820px) {
@@ -752,7 +780,7 @@ form {
     height: 103px;
   }
   .circles_container {
-    margin-top: 18%;
+    margin-top: 2%;
   }
   .header_image {
     height: 430px;
@@ -760,8 +788,8 @@ form {
   .slogan-text {
     margin-top: 30px;
   }
-  .method-section-container {
-    margin-top: 70px;
+  .ourValue-container {
+    height: 600px;
   }
   .content-detail-container span {
     font-size: 1rem;
@@ -782,6 +810,10 @@ form {
   .form-modal-container h4 {
     font-size: 1.5rem;
     margin: 0 30px;
+  }
+  .slogan-last-text-container {
+    padding: 0 10%;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 660px) {
