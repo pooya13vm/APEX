@@ -1,6 +1,7 @@
 import { useState } from "react";
 import pdf from "../assets/documents/apex.pdf";
 import ModalScreen from "./Modal";
+import image from "../assets/images/Group 149.png";
 
 function Slogan() {
   const [show, setShow] = useState(false);
@@ -34,7 +35,7 @@ function Slogan() {
         </p>
       </div>
       <div className="slogan-image-container">
-        <div className="slogan-image-item"></div>
+        {/* <div className="slogan-image-item"></div>
         <div className="slogan-image-item">A</div>
         <div className="slogan-image-item"></div>
         <div className="slogan-image-item">P</div>
@@ -42,7 +43,8 @@ function Slogan() {
         <div className="slogan-image-item">E</div>
         <div className="slogan-image-item"></div>
         <div className="slogan-image-item">X</div>
-        <div className="slogan-image-item"></div>
+        <div className="slogan-image-item"></div> */}
+        <img src={image} />
       </div>
       <h3 className="slogan-second-title">
         building a legacy with our clients.

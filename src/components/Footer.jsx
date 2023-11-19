@@ -1,9 +1,11 @@
 import apex from "../assets/images/Group 110.png";
-import logo1 from "../assets/images/Image 21.png";
-import logo2 from "../assets/images/image22.png";
-import logo3 from "../assets/images/Image 23.png";
-import logo4 from "../assets/images/Image 24.png";
-import logo5 from "../assets/images/Image 25.png";
+import logo1 from "../assets/images/Group 144.svg";
+// import logo2 from "../assets/images/Group 145.svg";
+import logo3 from "../assets/images/Group 146.png";
+import logo4 from "../assets/images/Group 147.png";
+import logo5 from "../assets/images/Group 148.png";
+import logo6 from "../assets/images/Group 145.png";
+import yellowImage from "../assets/images/Screen Shot.png";
 
 function Footer() {
   const handleForm = (e) => {
@@ -19,18 +21,16 @@ function Footer() {
       </div>
       <div className="footer-top-logo-container">
         <img src={logo1} />
-
-        <img scr={logo2} />
-
+        <img src={logo6} />
         <img src={logo3} />
-
         <img src={logo4} />
-
         <img src={logo5} />
       </div>
       <div className="footer-yellow-container">
-        <h3>Rise Above the Donation Slump</h3>
-        <div>images</div>
+        {/* <h3>Rise Above the Donation Slump</h3>
+        <div>images</div> */}
+
+        <img src={yellowImage} />
       </div>
       <div className="top-footer">
         <div className="top-footer-left">
