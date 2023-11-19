@@ -248,22 +248,9 @@ const SvgStar = ({ isMobile }) => {
       >
         <div
           style={{
-            width: "100%",
-            height: "100%",
-            position: "absolute",
-            backgroundColor: "#ffffffd7",
             display: showShadow ? "flex" : "none",
-            justifyContent: "center",
-            alignItems: "center",
-            zIndex: 20000,
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            transitionDelay: 4,
-            transitionProperty: "all",
-            transitionTimingFunction: "ease",
           }}
+          className="shadow-on-svg"
         >
           <div
             style={{
@@ -295,7 +282,7 @@ const SvgStar = ({ isMobile }) => {
         >
           <div className="svg-left-title1">
             <h3 style={{ color: contentItem === 5 ? "#fac544" : "#85704B" }}>
-              UNIVERSITY VERSION
+              NON-PROFIT ORGANIZATION VISION
             </h3>
           </div>
           <div
@@ -304,7 +291,7 @@ const SvgStar = ({ isMobile }) => {
               backgroundColor: contentItem === 5 ? "#fac544" : "#85704B",
             }}
           >
-            <h3>STRATEGY</h3>
+            <h3>STRATEGY AND PLANNING</h3>
           </div>
         </div>
         <div className="svg-main">
@@ -312,8 +299,9 @@ const SvgStar = ({ isMobile }) => {
             <circle cx="80" cy="80" r={isMobile ? "45" : "80"} fill="#fac544" />
           </svg>
           <div className="svg-center-text">
-            <p style={{ color: "#000" }}>ENROLLED</p>
-            <p style={{ color: "#000" }}>STUDENTS</p>
+            <p style={{ color: "#000" }}>LONG TERM</p>
+            <p style={{ color: "#000" }}>HIGHT VALUE</p>
+            <p style={{ color: "#000" }}>DONOR</p>
           </div>
           <div style={{ position: "relative" }}>
             <svg
@@ -342,8 +330,8 @@ const SvgStar = ({ isMobile }) => {
                 <g fill={state.second} onClick={() => active(1)}>
                   <path d="M 12 3 L 12 9 L 6 12 L 0 6 L 6 0" />
                 </g>
-                <text x="4.5" y="5" fill={state.text2} className="svg-text">
-                  ENROLLMENT
+                <text x="5" y="5" fill={state.text2} className="svg-text">
+                  NEW NAME
                 </text>
                 <text x="6" y="6.5" fill={state.text2} className="svg-text">
                   FUNNEL
@@ -372,12 +360,20 @@ const SvgStar = ({ isMobile }) => {
                 COMPETITIVE
               </text>
               <text
-                x={isMobile ? "4" : "3.5"}
+                x={isMobile ? "4" : "2.8"}
                 y="9"
                 fill={state.text3}
                 className="svg-text"
               >
-                INSIGHTS
+                ADVANTAGE
+              </text>
+              <text
+                x={isMobile ? "4" : "3.2"}
+                y="10.5"
+                fill={state.text3}
+                className="svg-text"
+              >
+                & INSIGHTS
               </text>
             </svg>
 
@@ -391,12 +387,12 @@ const SvgStar = ({ isMobile }) => {
                 <path d="M 12 6 L 6 12 L 0 9 L 0 3 L 6 0" />
               </g>
               <text
-                x={isMobile ? "3" : "2.5"}
+                x={isMobile ? "2" : "1"}
                 y="5.5"
                 fill={state.text4}
                 className="svg-text"
               >
-                STUDENT
+                DONOR FUNNEL
               </text>
               <text
                 x={isMobile ? "1.7" : "1"}
@@ -404,7 +400,7 @@ const SvgStar = ({ isMobile }) => {
                 fill={state.text4}
                 className="svg-text"
               >
-                PERSPECTIVES
+                MANAGEMENT
               </text>
             </svg>
           </div>

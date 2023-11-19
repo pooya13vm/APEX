@@ -11,6 +11,8 @@ function Footer() {
         <div style={{ backgroundColor: "#3ebec1" }} className="line"></div>
         <div style={{ backgroundColor: "#3a394b" }} className="line"></div>
       </div>
+      <div className="footer-top-logo-container"></div>
+      <div className="footer-yellow-container"></div>
       <div className="top-footer">
         <div className="top-footer-left">
           <h3>Get More Students Now!</h3>

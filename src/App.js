@@ -6,6 +6,7 @@ import Method from "./components/Method";
 import Quot from "./components/Quot";
 import LogoRow from "./components/LogoRow";
 import Footer from "./components/Footer";
+import OurValue from "./components/OueValue";
 import { useMediaQuery } from "react-responsive";
 
 function App() {
@@ -15,10 +16,11 @@ function App() {
     <>
       <Header />
       <Slogan />
+      <OurValue />
       <Method />
       <SvgStar isMobile={isMobile} />
-      <Quot isMobile={isMobile} />
-      <LogoRow />
+      {/* <Quot isMobile={isMobile} />
+      <LogoRow /> */}
       <Footer />
     </>
   );
