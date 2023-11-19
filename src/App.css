@@ -815,8 +815,25 @@ form {
     padding: 0 10%;
     text-align: center;
   }
+  .under-title-text {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .footer-top-logo-container {
+    height: 300px;
+  }
 }
 @media only screen and (max-width: 660px) {
+  .under-title-text {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1rem;
+  }
+  .center-child {
+    margin-top: -100px;
+  }
   .footer-down {
     flex-direction: column;
     height: fit-content;
@@ -897,7 +914,7 @@ form {
     font-size: 0.9px;
   }
   .circles_container {
-    margin-top: 11%;
+    margin-top: 3%;
   }
   .header_image {
     height: 310px;
@@ -946,9 +963,7 @@ form {
   .svg-right-title {
     font-size: 25px;
   }
-  .method-section-container {
-    margin: 50px 0;
-  }
+
   .strategy-btn {
     margin-top: 70px;
   }
@@ -982,8 +997,24 @@ form {
     font-size: 1.1rem;
     margin: 0 15px;
   }
+  .center-child {
+    margin-top: -30px;
+  }
+  .ourValue-container {
+    height: 650px;
+  }
+  .slogan-three-part-container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
-@media only screen and (max-width: 493px) {
+@media only screen and (max-width: 553px) {
+  .header_image h1 {
+    font-size: 32px;
+  }
+  .slogan-last-text-container p {
+    font-size: 1.5rem;
+  }
   .circles_container {
     margin-right: 5%;
     margin-left: 5%;
@@ -1005,5 +1036,9 @@ form {
   }
   .modal {
     left: 5% !important;
+  }
+  .ourValue-container {
+    height: 700px;
+    padding-bottom: 20px;
   }
 }
