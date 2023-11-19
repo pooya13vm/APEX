@@ -83,24 +83,25 @@ const SvgStar = ({ isMobile }) => {
           <div className="content-container">
             <h4>Benefits</h4>
             <p className="content">
-              Student profiles to drive applications and enrollments Strategies
-              to increase market share Create metrics used to measure the
-              strategy
+              Donor profile effectiveness to drive activations, cultivation,
+              conversion, and value proposition Market expansion strategy to
+              increase market share Metrics and measurement strategy.
             </p>
           </div>
           <div className="content-container">
             <h4>Activities</h4>
             <p className="content">
-              Analyze marketing activities and success Evaluate & measure new
-              opportunities to increase enrollments
+              Analyze NPO’s marketing efficiency and success and offer
+              recommendations Evaluate market opportunities to increase donor
+              rolls Gage the metrics and measurement driving contributions.
             </p>
           </div>
           <div className="content-container">
             <h4>Duration</h4>
             <p className="content">
-              Four weeks to evaluate marketing campaigns, explore local,
-              regional, national opportunities, and create metrics and
-              strategies to measure them
+              Example: 2 weeks to evaluate marketing campaigns 1 week to explore
+              local market and/or regional expansion opportunities 3 days to
+              review and suggest metric and measurement strategies
             </p>
           </div>
         </div>
@@ -113,26 +114,27 @@ const SvgStar = ({ isMobile }) => {
             SITUATION ASSESSMENT
           </h3>
           <div className="content-container">
+            <h4>Benefits</h4>
+            <p className="content">
+              Comprehensive analysis spanning 9 assessment areas Fact-based
+              Strengths/ Opportunities/ Weaknesses/ Threats (SWOT) Executive
+              level insights to advance long term/ high value donors
+            </p>
+          </div>
+          <div className="content-container">
             <h4>Activities</h4>
             <p className="content">
-              Create proprietary scorecard for financial, marketing, leadership,
-              and competitive assessments Develop an in-depth SWOT analysis and
-              plan of action
+              Use proprietary scorecard for financial, metrics, marketing,
+              leadership, competitive assessments Develop a in-depth view for
+              college’s SOWT Develop effective plan of action
             </p>
           </div>
           <div className="content-container">
-            <h4>Duration:</h4>
+            <h4>Duration</h4>
             <p className="content">
-              Four weeks to meet with key personnel to gather information,
-              create and refine scorecard, and present the findings
-            </p>
-          </div>
-          <div className="content-container">
-            <h4>Outcomes</h4>
-            <p className="content">
-              Comprehensive assessment spanning nine areas
-              Strengths/Weaknesses/Opportunities/Threats (SWOT) analysis
-              Executive level insights to advance recruitment efforts
+              Example: 3 days to refine proprietary scorecard 3 weeks to meet
+              with various directors to gather scoring information 4 days to
+              assemble findings and present them
             </p>
           </div>
         </div>
@@ -142,30 +144,31 @@ const SvgStar = ({ isMobile }) => {
       return (
         <div>
           <h3 className="title" style={{ color: colorsAction[1].second }}>
-            ENROLLMENT MANAGEMENT FUNNEL
+            NEW NAME FUNNEL MANAGEMENT
           </h3>
+          <div className="content-container">
+            <h4>Benefits</h4>
+            <p className="content">
+              Marketing campaigns to effective increase donations Brand equity,
+              positioning, and awareness in the marketplace Campaign(s) tailored
+              to different audiences to increase consumption and donations.
+            </p>
+          </div>
           <div className="content-container">
             <h4>Activities</h4>
             <p className="content">
-              Assess current and past campaigns for effectiveness toward goals
-              Measure brand in the marketplace Develop executable
-              recommendations for new campaigns
+              Assess current and past campaigns for effectiveness to
+              contribution goals Measure NPO’s brand in the marketplace pointing
+              to key prospects Develop executable recommendations.
             </p>
           </div>
           <div className="content-container">
-            <h4>Duration:</h4>
+            <h4>Duration</h4>
             <p className="content">
-              Three weeks to gather marketing campaigns and enrollment outcomes,
-              determine brand effectiveness, and provide a new strategy to
-              increase enrollments
-            </p>
-          </div>
-          <div className="content-container">
-            <h4>Outcomes</h4>
-            <p className="content">
-              Create marketing campaigns leading to new enrollments Brand
-              equity, positioning, an awareness in the marketplace Campaigns
-              tailored to the university and its offerings
+              Example: 5 days to gather marketing campaigns and donations
+              outcomes 2 weeks to determine branding effectiveness with
+              recommendations 3 days for brand rehabilitation strategy, if
+              needed.
             </p>
           </div>
         </div>
@@ -175,29 +178,30 @@ const SvgStar = ({ isMobile }) => {
       return (
         <div>
           <h3 className="title" style={{ color: colorsAction[2].third }}>
-            COMPETITIVE INSIGHTS
+            COMPETITIVE ADVANTAGE AND INSIGHTS
           </h3>
+          <div className="content-container">
+            <h4>Benefits</h4>
+            <p className="content">
+              Honed long term/ high value donor personas for messaging
+              Intelligence about donors demographics Market Segmentation for
+              effective donor roll marketing investments.
+            </p>
+          </div>
           <div className="content-container">
             <h4>Activities</h4>
             <p className="content">
-              Utilize proprietary technology to gather competitive data for
-              traditional and digital media spending, buying, and timing of
-              campaigns
+              Utilize specialized tools to gather specific linear and digital
+              media competitive spending, buying, and timing Competitive media
+              research options: Claritas, Media Mark Research, Similar Web,
+              comScore.
             </p>
           </div>
           <div className="content-container">
-            <h4>Duration:</h4>
+            <h4>Duration</h4>
             <p className="content">
-              Four weeks to complete interviews, do competitive media research,
-              and to develop a detailed plan
-            </p>
-          </div>
-          <div className="content-container">
-            <h4>Outcomes</h4>
-            <p className="content">
-              Hone student personas for messaging Provide intelligence about
-              student demographics for the purpose of market segmentation to
-              better understand future marketing investments
+              Example: 3 days to develop detailed plan for analysis 3 weeks for
+              competitive media research and persona development.
             </p>
           </div>
         </div>
@@ -207,30 +211,31 @@ const SvgStar = ({ isMobile }) => {
       return (
         <div>
           <h3 className="title" style={{ color: colorsAction[3].forth }}>
-            STUDENT PERSPECTIVES
+            DONOR FUNNEL MANAGEMENT
           </h3>
+          <div className="content-container">
+            <h4>Benefits</h4>
+            <p className="content">
+              Understand Audience needs vs. wants Insights into audience
+              listening and consumption preferences: Radio vs. Podcast vs.
+              Mobile App Immerse into how audience listens, how they speak and
+              their vernacular.
+            </p>
+          </div>
           <div className="content-container">
             <h4>Activities</h4>
             <p className="content">
-              Develop student survey to capture learning styles, preferences,
-              priorities, concerns, etc. Create a platform for interactive
-              response and data capture Analyze responses and create actionable
-              interpretations
+              Develop NPO donor survey to capture: learning styles, preferences,
+              highest priorities and concerns, etc. Create a platform for
+              interactive response and data capture Analysis responses and
+              actions.
             </p>
           </div>
           <div className="content-container">
-            <h4>Duration:</h4>
+            <h4>Duration</h4>
             <p className="content">
-              Six weeks to develop the survey, collect information, analyze the
-              data, and create a plan to reach future students
-            </p>
-          </div>
-          <div className="content-container">
-            <h4>Outcomes</h4>
-            <p className="content">
-              Understand students’ needs versus wants Provide insights into
-              students’ learning preferences Understand habits and inclinations
-              of students
+              Example: 2 weeks to develop Survey 2 weeks to collect information
+              2 weeks to analyze the data into actionable undertakings.
             </p>
           </div>
         </div>

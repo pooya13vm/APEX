@@ -1,4 +1,10 @@
 import apex from "../assets/images/Group 110.png";
+import logo1 from "../assets/images/Image 21.png";
+import logo2 from "../assets/images/image22.png";
+import logo3 from "../assets/images/Image 23.png";
+import logo4 from "../assets/images/Image 24.png";
+import logo5 from "../assets/images/Image 25.png";
+
 function Footer() {
   const handleForm = (e) => {
     e.preventDefault();
@@ -11,16 +17,32 @@ function Footer() {
         <div style={{ backgroundColor: "#3ebec1" }} className="line"></div>
         <div style={{ backgroundColor: "#3a394b" }} className="line"></div>
       </div>
-      <div className="footer-top-logo-container"></div>
-      <div className="footer-yellow-container"></div>
+      <div className="footer-top-logo-container">
+        <img src={logo1} />
+
+        <img scr={logo2} />
+
+        <img src={logo3} />
+
+        <img src={logo4} />
+
+        <img src={logo5} />
+      </div>
+      <div className="footer-yellow-container">
+        <h3>Rise Above the Donation Slump</h3>
+        <div>images</div>
+      </div>
       <div className="top-footer">
         <div className="top-footer-left">
-          <h3>Get More Students Now!</h3>
+          <h3>Get More From your Fundraising Efforts</h3>
           <h4>
             Your next start date is fast approaching, so the time to begin is
             now.
           </h4>
-          <h5> Let us help you develop a plan to get more students now!</h5>
+          <h5>
+            {" "}
+            Let us help you develop an effective and efficient fundraising plan!
+          </h5>
         </div>
         <div className="top-footer-right">
           <form
