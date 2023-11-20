@@ -1,42 +1,22 @@
-import React, { useState } from "react";
+import { useEffect } from "react";
 import image from "../assets/images/Screenshot.png";
+import { useForm } from "@formspree/react";
+import pdf from "../assets/documents/Apex_NPO_Trends_AE_191523_V2_red.pdf";
 
 function DownloadPart() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [isButtonEnabled, setButtonEnabled] = useState(false);
-
-  const handleNameChange = (event) => {
-    const value = event.target.value;
-    setName(value);
-    updateButtonState(value, email);
-  };
-
-  const handleEmailChange = (event) => {
-    const value = event.target.value;
-    setEmail(value);
-    updateButtonState(name, value);
-  };
-
-  const updateButtonState = (nameValue, emailValue) => {
-    // Enable the button if the name is filled and the email contains '@' and '.'
-    setButtonEnabled(
-      nameValue.trim() !== "" &&
-        emailValue.includes("@") &&
-        emailValue.includes(".")
-    );
-  };
-  const handleSubmit = () => {
-    // Handle form submission
-    // console.log("Form submitted with value:");
-  };
+  const [state, handleSubmit] = useForm("mqkvojpo");
+  useEffect(() => {
+    if (state.succeeded) {
+      window.location.href = pdf;
+    }
+  }, [state]);
   return (
     <div className="downloadPart-container">
       <div className="downloadPart-image-container">
         <img src={image} />
       </div>
       <div className="downloadPart-form-container">
-        <form>
+        <form onSubmit={handleSubmit}>
           <h3 className="downloadPart-title">
             Unlock the 7 Trends Post-COVID and the AI Revolution.
           </h3>
@@ -44,34 +24,28 @@ function DownloadPart() {
             <span style={{ fontWeight: "bold", color: "#db253de3" }}>
               Bonus:{"  "}
             </span>
-            <span style={{ fontWeight: "600" }}>Export insights included.</span>
+            <span style={{ fontWeight: "600" }}>Expert insights included.</span>
           </p>
+          <input placeholder="Full Name*" type="text" name="name" required />
           <input
-            placeholder="Full Name*"
-            type="text"
-            value={name}
-            onChange={handleNameChange}
-          />
-          <input
+            name="email"
             placeholder="Email*"
             type="email"
-            value={email}
-            onChange={handleEmailChange}
             style={{ marginTop: 16, marginBottom: 24 }}
+            required
           />
           <button
-            type="button"
-            onClick={handleSubmit}
-            disabled={!isButtonEnabled}
+            type="submit"
             style={{
               width: 255,
               height: 63,
               fontSize: "1.3rem",
               fontWeight: 700,
-              color: isButtonEnabled ? "#fac544" : "#fac54499",
-              backgroundColor: isButtonEnabled ? "#3A394B" : "#3A394B99",
+              color: "#fac544",
+              backgroundColor: "#3A394B",
               border: "none",
             }}
+            disabled={state.submitting}
           >
             Download
           </button>

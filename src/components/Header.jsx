@@ -6,7 +6,7 @@ function Header() {
       <div className="top-menu">
         <img src={logo} />
 
-        <div>
+        <div className="phone-number">
           <span>For inquiries please contact call</span>
           <span style={{ marginLeft: 10, fontSize: 24, fontWeight: "bold" }}>
             602.376.75777

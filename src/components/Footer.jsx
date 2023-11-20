@@ -6,35 +6,10 @@ import logo4 from "../assets/images/Group 147.png";
 import logo5 from "../assets/images/Group 148.png";
 import logo6 from "../assets/images/Group 145.png";
 import yellowImage from "../assets/images/Screen Shot.png";
-// import { useForm, ValidationError } from "@formspree/react";
-import { useState } from "react";
+import { useForm } from "@formspree/react";
 
 function Footer() {
-  // const [state, handleSubmit] = useForm("mknlaeor");
-  const [name, setName] = useState("pooya");
-  const [email, setEmail] = useState("a@b.com");
-  const handleForm = (e) => {
-    e.preventDefault();
-    const formData = new FormData();
-    formData.append("name", name);
-    formData.append("email", email);
-    const formspreeURL = "https://formspree.io/f/mknlaeor";
-    fetch(formspreeURL, {
-      method: "POST",
-      // headers: {
-      //   "Content-Type": "application/json",
-      // },
-      body: formData,
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Formspree response:", data);
-        // Handle success or error response from Formspree
-      })
-      .catch((error) => {
-        console.error("Error sending form data:", error);
-      });
-  };
+  const [state, handleSubmit] = useForm("mqkvojpo");
 
   return (
     <footer className="footer">
@@ -70,11 +45,7 @@ function Footer() {
           </h5>
         </div>
         <div className="top-footer-right">
-          <form
-            // action="https://formsubmit.co/lucy_hoger@yahoo.com"
-            // method="POST"
-            onSubmit={handleForm}
-          >
+          <form onSubmit={handleSubmit}>
             <input
               type="text"
               placeholder="Full Name*"
@@ -103,6 +74,16 @@ function Footer() {
             >
               Submit
             </button>
+            {state.succeeded && (
+              <p
+                style={{
+                  color: "#db253de3",
+                  textAlign: "left",
+                }}
+              >
+                Thanks for joining!
+              </p>
+            )}
           </form>
         </div>
       </div>
