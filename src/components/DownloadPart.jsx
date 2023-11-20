@@ -27,7 +27,7 @@ function DownloadPart() {
     );
   };
   const handleSubmit = () => {
-    // Handle form submission logic
+    // Handle form submission
     console.log("Form submitted with value:", inputValue);
   };
   return (
