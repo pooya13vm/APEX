@@ -42,10 +42,10 @@ function Method() {
         </div>
         <ModalScreen show={show} setShow={setShow} />
       </div>
-      <div className="method-red-container">
+      {/* <div className="method-red-container">
         <p>NPO Trends</p>
         <p>TBD</p>
-      </div>
+      </div> */}
     </>
   );
 }
