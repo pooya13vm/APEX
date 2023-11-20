@@ -6,11 +6,36 @@ import logo4 from "../assets/images/Group 147.png";
 import logo5 from "../assets/images/Group 148.png";
 import logo6 from "../assets/images/Group 145.png";
 import yellowImage from "../assets/images/Screen Shot.png";
+// import { useForm, ValidationError } from "@formspree/react";
+import { useState } from "react";
 
 function Footer() {
+  // const [state, handleSubmit] = useForm("mknlaeor");
+  const [name, setName] = useState("pooya");
+  const [email, setEmail] = useState("a@b.com");
   const handleForm = (e) => {
     e.preventDefault();
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("email", email);
+    const formspreeURL = "https://formspree.io/f/mknlaeor";
+    fetch(formspreeURL, {
+      method: "POST",
+      // headers: {
+      //   "Content-Type": "application/json",
+      // },
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Formspree response:", data);
+        // Handle success or error response from Formspree
+      })
+      .catch((error) => {
+        console.error("Error sending form data:", error);
+      });
   };
+
   return (
     <footer className="footer">
       <div className="top-line-footer">
@@ -46,11 +71,22 @@ function Footer() {
         </div>
         <div className="top-footer-right">
           <form
-            action="https://formsubmit.co/lucy_hoger@yahoo.com"
-            method="POST"
+            // action="https://formsubmit.co/lucy_hoger@yahoo.com"
+            // method="POST"
+            onSubmit={handleForm}
           >
-            <input type="text" placeholder="Full Name*" name="full name:" />
-            <input type="email" placeholder="Email*" name="Email:" />
+            <input
+              type="text"
+              placeholder="Full Name*"
+              name="full name:"
+              required
+            />
+            <input type="email" placeholder="Email*" name="email:" required />
+            {/* <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            /> */}
 
             <button
               type="submit"
@@ -63,7 +99,7 @@ function Footer() {
                 backgroundColor: "#3A394B",
                 border: "none",
               }}
-              onClick={handleForm}
+              // onClick={handleForm}
             >
               Submit
             </button>
