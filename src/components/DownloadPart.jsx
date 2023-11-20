@@ -28,7 +28,7 @@ function DownloadPart() {
   };
   const handleSubmit = () => {
     // Handle form submission
-    console.log("Form submitted with value:", inputValue);
+    // console.log("Form submitted with value:");
   };
   return (
     <div className="downloadPart-container">
