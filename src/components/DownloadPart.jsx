@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import image from "../assets/images/Screenshot.png";
 import { useForm } from "@formspree/react";
-import pdf from "../assets/documents/Apex_NPO_Trends_AE_191523_V2_red.pdf";
+import pdf from "../assets/documents/Apex_NPO_Trends_AE_191523_V4.pdf";
 
 function DownloadPart() {
   const [state, handleSubmit] = useForm("mqkvojpo");
