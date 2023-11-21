@@ -1058,11 +1058,11 @@ form {
   }
 
   .svg-center-text {
-    top: 142px;
-    left: 128px;
+    top: 137px;
+    left: 123px;
   }
   .svg-center-text p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .svg-text {
     font-size: 0.9px;
@@ -1133,10 +1133,12 @@ form {
   .logos-container {
     margin-top: 90px;
   }
-  /* .top-footer {
-    height: 612px;
-    align-items: flex-start;
-  } */
+  .svg-left-title1 h3 {
+    font-size: 16px;
+  }
+  .svg-left-title2 h3 {
+    font-size: 16px;
+  }
   .top-footer-left h3 {
     font-size: 25px;
     margin-top: 50px;

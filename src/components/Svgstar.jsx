@@ -69,7 +69,6 @@ const SvgStar = ({ isMobile }) => {
   const [contentItem, setContentItem] = useState(5);
   const [showShadow, setShowShadow] = useState(true);
   const active = (num) => {
-    console.log(num);
     setState(colorsAction[num]);
     setContentItem(num);
   };
@@ -365,7 +364,7 @@ const SvgStar = ({ isMobile }) => {
                 COMPETITIVE
               </text>
               <text
-                x={isMobile ? "4" : "2.8"}
+                x={isMobile ? "3.2" : "2.8"}
                 y="9"
                 fill={state.text3}
                 className="svg-text"
@@ -373,7 +372,7 @@ const SvgStar = ({ isMobile }) => {
                 ADVANTAGE
               </text>
               <text
-                x={isMobile ? "4" : "3.2"}
+                x={isMobile ? "3.4" : "3.2"}
                 y="10.5"
                 fill={state.text3}
                 className="svg-text"
@@ -392,7 +391,7 @@ const SvgStar = ({ isMobile }) => {
                 <path d="M 12 6 L 6 12 L 0 9 L 0 3 L 6 0" />
               </g>
               <text
-                x={isMobile ? "2" : "1"}
+                x={isMobile ? "1" : "1"}
                 y="5.5"
                 fill={state.text4}
                 className="svg-text"
@@ -400,7 +399,7 @@ const SvgStar = ({ isMobile }) => {
                 DONOR FUNNEL
               </text>
               <text
-                x={isMobile ? "1.7" : "1"}
+                x={isMobile ? "1.2" : "1"}
                 y="7"
                 fill={state.text4}
                 className="svg-text"
