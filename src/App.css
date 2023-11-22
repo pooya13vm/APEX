@@ -824,6 +824,14 @@ form {
   }
 }
 @media only screen and (max-width: 964px) {
+  .top-menu {
+    margin-top: 40px !important;
+  }
+  .under-title-text {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 2%;
+  }
   .header_image {
     background-size: contain;
     height: 510px;
@@ -898,8 +906,9 @@ form {
     text-align: center;
   }
   .under-title-text {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: 1.2rem;
   }
   .top-menu {
     margin: 40px 2% 0 2%;
@@ -1223,6 +1232,9 @@ form {
   }
   .under-title-text {
     margin-top: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 20px;
   }
   .slogan-last-text-container p {
     font-size: 1.3rem;
@@ -1239,6 +1251,12 @@ form {
   }
   .method-section-left img:nth-child(odd) {
     width: 48px;
+  }
+  .header_image h1 {
+    font-size: 28px;
+  }
+  .header_image {
+    height: 350px;
   }
 }
 @media only screen and (max-width: 438px) {

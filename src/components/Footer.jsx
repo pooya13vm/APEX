@@ -94,7 +94,7 @@ function Footer() {
             6929 E. Greenway PKWY, Suite 120, Scottsdale, AZ 85254 For inquiries
             please contact
           </p>
-          <p>khartless@apexmedia.com or call 480.596.6320</p>
+          <p>carrie@apexmedia.com or call 602.376.75777</p>
         </div>
       </div>
     </footer>

@@ -23,8 +23,10 @@ function Header() {
         </div>
         <h1>RESPONSIVE FUNDRAISING!</h1>
         <p className="under-title-text">
-          Apex Media has partnered with none-profit organizations for decades to
-          take advantage of the changing fundraising efforts and behaviors.
+          Apex Media’s enduring commitment to nonprofit organization’s
+          collaboration spans decades, demonstrating a proactive approach in
+          harnessing the shifting dynamics and nuances of fundraising campaigns
+          to exploit emerging challenges and opportunities.
         </p>
         <div className="circles_container">
           <div className="circle_item">
