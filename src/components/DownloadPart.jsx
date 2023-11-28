@@ -26,7 +26,7 @@ function DownloadPart() {
             </span>
             <span style={{ fontWeight: "600" }}>Expert insights included.</span>
           </p>
-          <input placeholder="Full Name*" type="text" name="name" required />
+          <input placeholder="First name*" type="text" name="name" required />
           <input
             name="email"
             placeholder="Email*"

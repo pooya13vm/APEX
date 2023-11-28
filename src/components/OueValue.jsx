@@ -21,7 +21,7 @@ function OurValue() {
           We take pride in our combined years of knowledge, expertise and
           passion when working with organizations to scale their mission. The
           true measure of generosity is how we share what we know with you. We
-          call this going the extra mile
+          call this going the extra mile.
         </p>
       </div>
       <div className="ourValue-item">
@@ -29,7 +29,7 @@ function OurValue() {
         <p>
           Doing what is easy is just that - easy! Instead of easy, we focus on
           what is right for your brand. With confident competence we embrace
-          transformative change with your
+          transformative change with your mission top of mind.
         </p>
       </div>
     </div>

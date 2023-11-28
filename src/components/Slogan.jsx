@@ -21,8 +21,14 @@ function Slogan() {
       <div className="slogan-text" data-aos="fade-down-left">
         <h2>About Apex Media</h2>
         <p>
+          Apex Media’s enduring commitment to nonprofit organization’s
+          collaboration spans decades, demonstrating a proactive approach in
+          harnessing the shifting dynamics and nuances of fundraising campaigns
+          to exploit emerging challenges and opportunities.
+        </p>
+        <p>
           Apex Media uses advanced, proprietary methods and technology to
-          identify, locate, and content to create an ideal fundraising campaign.
+          identify, locate, and connect to create an ideal fundraising campaign.
         </p>
         <p>
           We then utilize an omnichannel approach to actively engage a community
