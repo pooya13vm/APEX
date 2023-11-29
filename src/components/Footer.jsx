@@ -35,10 +35,7 @@ function Footer() {
       <div className="top-footer">
         <div className="top-footer-left">
           <h3>Get More From your Fundraising Efforts</h3>
-          <h4>
-            Your next start date is fast approaching, so the time to begin is
-            now.
-          </h4>
+          <h4>Fundraising never stops, so the time is now.</h4>
           <h5>
             {" "}
             Let us help you develop an effective and efficient fundraising plan!
@@ -48,7 +45,7 @@ function Footer() {
           <form onSubmit={handleSubmit}>
             <input
               type="text"
-              placeholder="Full Name*"
+              placeholder="First name*"
               name="full name:"
               required
             />

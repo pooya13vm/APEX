@@ -615,7 +615,7 @@ form {
   font-size: 22px;
   margin-left: 17%;
   margin-right: 17%;
-  margin-top: 5%;
+  margin-top: 17%;
 }
 @media only screen and (max-width: 1730px) {
   .header_image h1 {
@@ -640,7 +640,7 @@ form {
     background-size: auto;
   }
   .circles_container {
-    margin-top: 12%;
+    margin-top: 25%;
   }
   .svg-right-title {
     font-size: 32px;
@@ -738,7 +738,7 @@ form {
     font-size: 60px;
   }
   .circles_container {
-    margin-top: 15%;
+    margin-top: 35%;
   }
   .method-section-right {
     width: 100%;
@@ -762,7 +762,7 @@ form {
     display: none;
   }
   .circles_container {
-    /* margin-top: 26%; */
+    margin-top: 30%;
   }
   .method-section-container {
     height: 540px;
@@ -838,7 +838,7 @@ form {
     margin-bottom: -50px;
   }
   .circles_container {
-    margin-top: 3%;
+    margin-top: 18%;
   }
   .circle_item {
     width: 160px;
@@ -870,7 +870,7 @@ form {
     height: 103px;
   }
   .circles_container {
-    margin-top: 2%;
+    margin-top: 20%;
   }
   .header_image {
     height: 430px;
@@ -1077,7 +1077,7 @@ form {
     font-size: 0.9px;
   }
   .circles_container {
-    margin-top: 3%;
+    margin-top: 20%;
   }
   .header_image {
     height: 310px;
@@ -1257,6 +1257,9 @@ form {
   }
   .header_image {
     height: 350px;
+  }
+  .circles_container {
+    margin-top: 37%;
   }
 }
 @media only screen and (max-width: 438px) {
