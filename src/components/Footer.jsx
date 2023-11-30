@@ -34,8 +34,11 @@ function Footer() {
       </div>
       <div className="top-footer">
         <div className="top-footer-left">
-          <h3>Get More From your Fundraising Efforts</h3>
-          <h4>Fundraising never stops, so the time is now.</h4>
+          <h3>Contact us to get more from your fundraising efforts</h3>
+          <h4>
+            Fundraising never stops,
+            <br /> so the time is now.
+          </h4>
           <h5>
             {" "}
             Let us help you develop an effective and efficient fundraising plan!

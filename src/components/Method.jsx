@@ -2,7 +2,7 @@ import { useState } from "react";
 import num1 from "../assets/images/Group 116.png";
 import num2 from "../assets/images/Group 115.png";
 import num3 from "../assets/images/Group 113.png";
-import num4 from "../assets/images/Group 114.png";
+import num4 from "../assets/images/heart.jpg";
 import polygon from "../assets/images/Polygon 1.png";
 import ModalScreen from "./Modal";
 

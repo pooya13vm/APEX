@@ -1,5 +1,4 @@
 import { useState } from "react";
-import pdf from "../assets/documents/apex.pdf";
 import ModalScreen from "./Modal";
 import image from "../assets/images/Group 149.png";
 
@@ -35,7 +34,7 @@ function Slogan() {
           of charitable donors to engage with your cause.{" "}
         </p>
         <p>
-          Across the years, We`ve adeptly embraced trends, serving as catalysts
+          Across the years, we`ve adeptly embraced trends, serving as catalysts
           for our clients to realize their mission and forge a meaningful legacy
           in their community.
         </p>
@@ -63,7 +62,10 @@ function Slogan() {
         </span>
         <span className="slogan-three-part-item">
           <p>BILLIONS</p>
-          <p>Of Clients Revenue Generated</p>
+          <p>
+            Of Clients Revenue
+            <br /> Generated
+          </p>
         </span>
         <span className="slogan-three-part-item">
           <p>1 MISSION</p>

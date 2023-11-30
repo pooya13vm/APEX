@@ -419,7 +419,7 @@ const SvgStar = ({ isMobile }) => {
               Strategic & Competitive Framework
             </h2>
             <p className="svg-right-title2">
-              Piecing together the fundraising puzzle
+              Piecing together the responsive fundraising puzzle
             </p>
           </>
         )}
