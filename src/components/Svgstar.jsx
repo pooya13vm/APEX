@@ -83,24 +83,24 @@ const SvgStar = ({ isMobile }) => {
             <h4>Benefits</h4>
             <p className="content">
               Donor profile effectiveness to drive activations, cultivation,
-              conversion, and value proposition Market expansion strategy to
-              increase market share Metrics and measurement strategy.
+              conversion, and value proposition. Market expansion strategy to
+              increase market share.Metrics and measurement strategy.
             </p>
           </div>
           <div className="content-container">
             <h4>Activities</h4>
             <p className="content">
               Analyze NPO’s marketing efficiency and success and offer
-              recommendations Evaluate market opportunities to increase donor
-              rolls Gage the metrics and measurement driving contributions.
+              recommendations. Evaluate market opportunities to increase donor
+              rolls. Gage the metrics and measurement driving contributions.
             </p>
           </div>
           <div className="content-container">
             <h4>Duration</h4>
             <p className="content">
-              Example: 2 weeks to evaluate marketing campaigns 1 week to explore
-              local market and/or regional expansion opportunities 3 days to
-              review and suggest metric and measurement strategies
+              Examples: 2 weeks to evaluate marketing campaigns. 1 week to
+              explore local market and/or regional expansion opportunities. 3
+              days to review and suggest metric and measurement strategies
             </p>
           </div>
         </div>
@@ -115,25 +115,25 @@ const SvgStar = ({ isMobile }) => {
           <div className="content-container">
             <h4>Benefits</h4>
             <p className="content">
-              Comprehensive analysis spanning 9 assessment areas Fact-based
-              Strengths/ Opportunities/ Weaknesses/ Threats (SWOT) Executive
-              level insights to advance long term/ high value donors
+              A comprehensive analysis spanning 9 assessment areas. Fact-based
+              Strengths/ Opportunities/ Weaknesses/ Threats (SWOT).
+              Executive-level insights to advance long-term/ high value, donors.
             </p>
           </div>
           <div className="content-container">
             <h4>Activities</h4>
             <p className="content">
-              Use proprietary scorecard for financial, metrics, marketing,
-              leadership, competitive assessments Develop a in-depth view for
-              college’s SOWT Develop effective plan of action
+              Use proprietary scorecards for financial, metrics, marketing,
+              leadership, and competitive assessments. Develop an in-depth view
+              of the college’s SOWT. Develop an effective plan of action.
             </p>
           </div>
           <div className="content-container">
             <h4>Duration</h4>
             <p className="content">
-              Example: 3 days to refine proprietary scorecard 3 weeks to meet
-              with various directors to gather scoring information 4 days to
-              assemble findings and present them
+              Examples: 3 days to refine proprietary scorecard. 3 weeks to meet
+              with various directors to gather scoring information. 4 days to
+              assemble findings and present them.
             </p>
           </div>
         </div>
@@ -148,25 +148,26 @@ const SvgStar = ({ isMobile }) => {
           <div className="content-container">
             <h4>Benefits</h4>
             <p className="content">
-              Marketing campaigns to effective increase donations Brand equity,
-              positioning, and awareness in the marketplace Campaign(s) tailored
-              to different audiences to increase consumption and donations.
+              Marketing campaigns to effectively increase donations. Brand
+              equity, positioning, and awareness in the marketplace. Campaign(s)
+              tailored to different audiences to increase consumption and
+              donations.
             </p>
           </div>
           <div className="content-container">
             <h4>Activities</h4>
             <p className="content">
               Assess current and past campaigns for effectiveness to
-              contribution goals Measure NPO’s brand in the marketplace pointing
-              to key prospects Develop executable recommendations.
+              contribution goals. Measure NPO’s brand in the marketplace
+              pointing to key prospects. Develop executable recommendations.
             </p>
           </div>
           <div className="content-container">
             <h4>Duration</h4>
             <p className="content">
-              Example: 5 days to gather marketing campaigns and donations
-              outcomes 2 weeks to determine branding effectiveness with
-              recommendations 3 days for brand rehabilitation strategy, if
+              Examples: 5 days to gather marketing campaigns and donations
+              outcomes. 2 weeks to determine branding effectiveness with
+              recommendations. 3 days for brand rehabilitation strategy, if
               needed.
             </p>
           </div>
@@ -182,8 +183,8 @@ const SvgStar = ({ isMobile }) => {
           <div className="content-container">
             <h4>Benefits</h4>
             <p className="content">
-              Honed long term/ high value donor personas for messaging
-              Intelligence about donors demographics Market Segmentation for
+              Honed long term/ high value donor personas for messaging.
+              Intelligence about donor demographics. Market Segmentation for
               effective donor roll marketing investments.
             </p>
           </div>
@@ -191,7 +192,7 @@ const SvgStar = ({ isMobile }) => {
             <h4>Activities</h4>
             <p className="content">
               Utilize specialized tools to gather specific linear and digital
-              media competitive spending, buying, and timing Competitive media
+              media competitive spending, buying, and timing. Competitive media
               research options: Claritas, Media Mark Research, Similar Web,
               comScore.
             </p>
@@ -199,8 +200,8 @@ const SvgStar = ({ isMobile }) => {
           <div className="content-container">
             <h4>Duration</h4>
             <p className="content">
-              Example: 3 days to develop detailed plan for analysis 3 weeks for
-              competitive media research and persona development.
+              Examples: 3 days to develop a detailed plan for analysis. 3 weeks
+              for competitive media research and personal development.
             </p>
           </div>
         </div>
@@ -215,26 +216,27 @@ const SvgStar = ({ isMobile }) => {
           <div className="content-container">
             <h4>Benefits</h4>
             <p className="content">
-              Understand Audience needs vs. wants Insights into audience
+              Understand Audience needs vs. wants. Insights into audience
               listening and consumption preferences: Radio vs. Podcast vs.
-              Mobile App Immerse into how audience listens, how they speak and
-              their vernacular.
+              Mobile App. Immerse into how the audience listens, how they speak,
+              and their vernacular.
             </p>
           </div>
           <div className="content-container">
             <h4>Activities</h4>
             <p className="content">
-              Develop NPO donor survey to capture: learning styles, preferences,
-              highest priorities and concerns, etc. Create a platform for
-              interactive response and data capture Analysis responses and
-              actions.
+              Develop NPO donor surveys to capture: learning styles,
+              preferences, highest priorities and concerns, etc. Create a
+              platform for interactive response and data capture. Analysis of
+              responses and actions.
             </p>
           </div>
           <div className="content-container">
             <h4>Duration</h4>
             <p className="content">
-              Example: 2 weeks to develop Survey 2 weeks to collect information
-              2 weeks to analyze the data into actionable undertakings.
+              Examples: 2 weeks to develop a survey. 2 weeks to collect
+              information. 2 weeks to analyze the data into actionable
+              undertakings.
             </p>
           </div>
         </div>
@@ -273,7 +275,7 @@ const SvgStar = ({ isMobile }) => {
               Strategic & Competitive Blueprint
             </h2>
             <p className="svg-right-title2">
-              Piecing together the enrollment puzzle
+              Piecing together the fundraising puzzle
             </p>
           </>
         )}
@@ -417,7 +419,7 @@ const SvgStar = ({ isMobile }) => {
               Strategic & Competitive Framework
             </h2>
             <p className="svg-right-title2">
-              Piecing together the enrollment puzzle
+              Piecing together the fundraising puzzle
             </p>
           </>
         )}
