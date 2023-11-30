@@ -84,7 +84,7 @@ const SvgStar = ({ isMobile }) => {
             <p className="content">
               Donor profile effectiveness to drive activations, cultivation,
               conversion, and value proposition. Market expansion strategy to
-              increase market share.Metrics and measurement strategy.
+              increase market share. Metrics and measurement strategy.
             </p>
           </div>
           <div className="content-container">
@@ -98,9 +98,9 @@ const SvgStar = ({ isMobile }) => {
           <div className="content-container">
             <h4>Duration</h4>
             <p className="content">
-              Examples: 2 weeks to evaluate marketing campaigns. 1 week to
-              explore local market and/or regional expansion opportunities. 3
-              days to review and suggest metric and measurement strategies
+              2 weeks to evaluate marketing campaigns. 1 week to explore local
+              market and/or regional expansion opportunities. 3 days to review
+              and suggest metric and measurement strategies.
             </p>
           </div>
         </div>
@@ -116,7 +116,7 @@ const SvgStar = ({ isMobile }) => {
             <h4>Benefits</h4>
             <p className="content">
               A comprehensive analysis spanning 9 assessment areas. Fact-based
-              Strengths/ Opportunities/ Weaknesses/ Threats (SWOT).
+              Strengths/ Opportunities/Weaknesses/Threats (SWOT).
               Executive-level insights to advance long-term/ high value, donors.
             </p>
           </div>
